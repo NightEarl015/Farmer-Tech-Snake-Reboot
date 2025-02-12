@@ -1,0 +1,29 @@
+{
+  "type": "mysticalagriculture:awakening",
+  "essences": {
+    "air": 0,
+    "earth": 0,
+    "water": 0,
+    "fire": 0
+  },
+  "input": {
+    "item": "minecraft:air"
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "result": {
+    "item": "minecraft:air"
+  }
+}

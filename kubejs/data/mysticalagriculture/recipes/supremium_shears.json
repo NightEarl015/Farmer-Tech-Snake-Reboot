@@ -1,0 +1,23 @@
+{
+  "type": "cucumber:shaped_transfer_damage",
+  "transfer_nbt": true,
+  "pattern": [
+    " G ",
+    "ISI",
+    " G "
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:air"
+    },
+    "I": {
+      "item": "minecraft:air"
+    },
+    "S": {
+      "item": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "minecraft:air"
+  }
+}

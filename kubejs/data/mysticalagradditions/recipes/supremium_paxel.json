@@ -1,0 +1,35 @@
+{
+  "type": "crafting_shaped",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "mysticalagradditions:supremium_paxel"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "mysticalagriculture:supremium_pickaxe"
+    }
+  ],
+  "pattern": [
+    "ABC",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:air"
+    },
+    "B": {
+      "item": "minecraft:air"
+    },
+    "C": {
+      "item": "minecraft:air"
+    },
+    "S": {
+      "tag": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "minecraft:air"
+  }
+}
