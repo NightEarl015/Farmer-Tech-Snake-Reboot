@@ -9,16 +9,30 @@ ServerEvents.recipes(event => {
     ]; // Defining types
     types.forEach(type => {
         event.remove({output: `mysticalagriculture:inferium_${type}`})
-        event.remove({output: `mysticalagriculture:prudentium__${type}`})
+        event.remove({output: `mysticalagriculture:prudentium_${type}`})
         event.remove({output: `mysticalagriculture:tertium_${type}`})
-        event.remove({output: `mysticalagriculture:supremium_${type}`})
+        event.remove({output: `mysticalagriculture:supremium_${type}`}) 
         event.remove({output: `mysticalagriculture:imperium_${type}`})
-        event.remove({output: `mysticalagradditions:insanium_${type}`})
+        event.remove({output: `mysticalagradditions:insanium_${type}`}) // Remove Essence kit
     });
 
-
+    const materials = [
+        'invar', 'iridium', 'lead', 'nickel', 'niter', 'platinum', 'silver', 'fluix', 'certus_quartz', 'steel', 'tin', 'titanium', 'uranium', 'zinc', 'aluminum', 'brass', 'bronze', 'constantan', 'electrum'
+    ]; // Defining materials
+    materials.forEach(material => {
+        event.remove({output: `alltheores:${material}_dust`})
+        event.remove({input: `alltheores:${material}_ingot`})
+        event.remove({output: `alltheores:${material}_ingot`})
+    });
     
-    // Rewrite recipes
+    event.remove({id: "mysticalagriculture:essence/appliedenergistics2/silicon"})
+    event.remove({id: "mysticalagriculture:essence/common/sulfur"})
+    event.remove({output: 'mysticalagriculture:mystical_fertilizer'})
+
+
+
+
+    // Rewrited recipes
 
     // Unique recipes
     // Infusion Crystal
@@ -98,6 +112,8 @@ ServerEvents.recipes(event => {
 
 
 
+
+
     // Similar recipes
     // Essence Conversion
     function infusion(output, essence){
@@ -148,4 +164,53 @@ ServerEvents.recipes(event => {
     block('mysticalagriculture:tertium_block', 'mysticalagriculture:tertium_essence')
     block('mysticalagriculture:supremium_block', 'mysticalagriculture:supremium_essence')
     block('mysticalagradditions:insanium_block', 'mysticalagradditions:insanium_essence')
+
+    // Essence Polymerization #1
+    function poly1(output, essence){
+        event.shaped(output, [
+            'OOO'
+        ], {
+            O: essence
+        })
+    }
+    poly1("2x #forge:silicon", 'mysticalagriculture:silicon_essence')
+    poly1("3x #forge:dusts/sulfur", 'mysticalagriculture:sulfur_essence')
+
+    // Essence Polymerization #2
+    function poly2(output, essence){
+        event.shaped(output, [
+            'OOO',
+            'O O',
+            'OOO'
+        ], {
+            O: essence
+        })
+    }
+    poly2('3x ae2:certus_quartz_crystal', 'mysticalagriculture:certus_quartz_essence')
+    poly2('3x ae2:fluix_crystal', 'mysticalagriculture:fluix_essence')
+    poly2('4x ae2:sky_stone_block', 'mysticalagriculture:sky_stone_essence') //Applied Energistics 2
+    poly2("3x #forge:raw_materials/lead", 'mysticalagriculture:lead_essence')
+    poly2("2x #forge:raw_materials/silver", 'mysticalagriculture:silver_essence')
+    poly2("2x #forge:dusts/steel", 'mysticalagriculture:steel_essence')
+    poly2("2x #forge:raw_materials/uranium", 'mysticalagriculture:uranium_essence')
+    poly2("2x #forge:raw_materials/zinc", 'mysticalagriculture:zinc_essence')
+    poly2("2x #forge:raw_materials/tin", 'mysticalagriculture:tin_essence')
+    poly2("2x #forge:dusts/brass", 'mysticalagriculture:brass_essence')
+    poly2("2x #forge:dusts/bronze", 'mysticalagriculture:bronze_essence')
+    poly2("2x #forge:dusts/electrum", 'mysticalagriculture:electrum_essence')
+    poly2("2x #forge:raw_materials/aluminum", 'mysticalagriculture:aluminum_essence') //All the ores
+    poly2("2x #forge:raw_materials/copper", 'mysticalagriculture:copper_essence')
+    poly2("2x #forge:raw_materials/iron", 'mysticalagriculture:iron_essence')
+    poly2("2x #forge:raw_materials/gold", 'mysticalagriculture:gold_essence')
+    poly2('mekanism:dust_netherite', 'mysticalagriculture:netherite_essence') 
+    poly2('6x minecraft:quartz', 'mysticalagriculture:nether_quartz_essence')
+    poly2('10x minecraft:amethyst_shard', 'mysticalagriculture:amethyst_essence') //Minecraft
+    //Disabled Ores
+    /*
+    poly2("2x #forge:dusts/constantan", 'mysticalagriculture:constantan_essence')
+    poly2("3x #forge:raw_materials/platinum", 'mysticalagriculture:platinum_essence')
+    poly2("3x #forge:raw_materials/nickel", 'mysticalagriculture:nickel_essence')
+    poly2("2x #forge:raw_materials/iridium", 'mysticalagriculture:iridium_essence')
+    poly2("2x #forge:dusts/invar", 'mysticalagriculture:invar_essence') 
+    */ 
 })
