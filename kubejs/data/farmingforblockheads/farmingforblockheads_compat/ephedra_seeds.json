@@ -1,0 +1,21 @@
+{
+  "modId": "createbb",
+  "silent": true,
+  "group": {
+    "name": "Ephedra Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "createbb:ephedra_seeds",
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 6
+      }
+    }
+  ]
+}

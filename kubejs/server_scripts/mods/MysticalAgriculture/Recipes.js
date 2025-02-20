@@ -5,7 +5,7 @@ ServerEvents.recipes(event => {
 
     // Removed recipes
     const types = [
-        'apple', 'coal', 'essence', 'sword', 'pickaxe', 'shovel', 'axe', 'hoe', 'watering_can', 'bow', 'crossbow', 'shears', 'fishing_rod', 'scythe', 'sickle', 'helmet', 'chestplate', 'leggings', 'boots', 'paxel', 'farmland'
+        'apple', 'coal', 'essence', 'sword', 'pickaxe', 'shovel', 'axe', 'hoe', 'watering_can', 'bow', 'crossbow', 'shears', 'fishing_rod', 'scythe', 'helmet', 'chestplate', 'leggings', 'boots', 'paxel', 'farmland'
     ]; // Defining types
     types.forEach(type => {
         event.remove({output: `mysticalagriculture:inferium_${type}`})

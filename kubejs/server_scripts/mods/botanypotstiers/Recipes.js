@@ -21,6 +21,7 @@ ServerEvents.recipes(event => {
     });
     */
 
+    /*
     // Rewrited recipes
     // Unique recipes
 
@@ -488,5 +489,6 @@ ServerEvents.recipes(event => {
                 T: `minecraft:${color}_concrete`
             }
         ).id(`kubejs:botanypotstiers/ultra_${color}_concrete_hopper_botany_pot_4`)
-    })         
+    })
+    */             
 })

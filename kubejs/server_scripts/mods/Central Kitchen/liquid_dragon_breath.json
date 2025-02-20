@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "mysticalagriculture:dragon_egg_essence"
+    },
+    {
+      "item": "mysticalagriculture:dragon_egg_essence"
+    },
+    {
+      "item": "mysticalagriculture:dragon_egg_essence"
+    },
+    {
+      "item": "mysticalagriculture:dragon_egg_essence"
+    },
+    {
+      "amount": 1000,
+      "fluid": "kubejs:liquid_dragon_essence"
+    }
+  ],
+  "results": [
+    {
+      "amount": 250,
+      "fluid": "create_central_kitchen:dragon_breath"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "mekanism:dust_obsidian"
+    },
+    {
+      "item": "fluxnetworks:flux_dust"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:lava"
+    }
+  ],
+  "results": [
+    {
+      "item": "fluxnetworks:flux_dust"
+    },
+    {
+      "item": "fluxnetworks:flux_dust"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "modId": "thermal",
+  "silent": true,
+  "group": {
+    "name": "Flax Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "thermal:flax_seeds",
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 2
+      }
+    }
+  ]
+}
