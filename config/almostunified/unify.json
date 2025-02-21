@@ -2,12 +2,18 @@
   "modPriorities": [
     "minecraft",
     "alltheores",
+    "allthemodium",
     "kubejs",
-    "crafttweaker",
-    "create",
-    "thermal",
-    "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "modern_industrialization",
+    "occultism",
+    "industrialforegoing",
+    "pneumaticcraft",
+    "biggerreactors", 
+    "ae2",
+    "enderio",
+    "utilitarian",
+    "actuallyadditions"
   ],
   "stoneStrata": [
     "stone",
@@ -71,6 +77,7 @@
     "potassium_nitrate",
     "ruby",
     "sapphire",
+    "salt",
     "signalum",
     "silver",
     "steel",
