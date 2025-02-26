@@ -6,9 +6,10 @@ StartupEvents.registry("fluid",event=>{
   .thinTexture(0x8b008b)
   .bucketColor(0x8b008b)
   .displayName("Liquid Dragon Essence")
-  event.create("mekanism:antimatter")
-  .thinTexture(0x85568f)
-  .bucketColor(0x85568f)
-  .displayName("Liquid Antimatter")
+  event.create("kubejs:sea_salt_water")
+  .thinTexture(0xcccccc)
+  .bucketColor(0xcccccc)
+  .displayName("Sea Salt Water")
+  
 })
 Platform.mods.kubejs.name = 'Farmer & Tech Snake'

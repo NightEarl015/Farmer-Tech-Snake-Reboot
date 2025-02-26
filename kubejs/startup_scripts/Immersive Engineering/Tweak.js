@@ -4,6 +4,6 @@
 // Engineer Hammer Infinite Durability
 ItemEvents.modification(event => {
   event.modify('immersiveengineering:hammer', item => {
-    item.maxDamage = -1
+    item.maxDamage = 0
   })
 })

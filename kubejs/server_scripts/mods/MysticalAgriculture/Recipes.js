@@ -7,13 +7,15 @@ ServerEvents.recipes(event => {
     const types = [
         'apple', 'coal', 'essence', 'sword', 'pickaxe', 'shovel', 'axe', 'hoe', 'watering_can', 'bow', 'crossbow', 'shears', 'fishing_rod', 'scythe', 'sickle', 'helmet', 'chestplate', 'leggings', 'boots', 'paxel', 'farmland'
     ]; // Defining types
+
+    const levels = [
+        'inferium', 'prudentium', 'tertium', 'supremium', 'imperium'
+    ]; // Defining levels
     types.forEach(type => {
-        event.remove({output: `mysticalagriculture:inferium_${type}`})
-        event.remove({output: `mysticalagriculture:prudentium_${type}`})
-        event.remove({output: `mysticalagriculture:tertium_${type}`})
-        event.remove({output: `mysticalagriculture:supremium_${type}`}) 
-        event.remove({output: `mysticalagriculture:imperium_${type}`})
-        event.remove({output: `mysticalagradditions:insanium_${type}`}) // Remove Essence kit
+        levels.forEach(level => {
+            event.remove({output: `mysticalagriculture:${level}_${type}`})
+            event.remove({output: `mysticalagradditions:insanium_${type}`})// Remove Essence kit
+        });
     });
 
     const materials = [
