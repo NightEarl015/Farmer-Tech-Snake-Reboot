@@ -143,7 +143,7 @@ if (Platform.isLoaded('botanypotstiers')) {
             types.forEach(type =>{
             // Elite Botany Pot #1(Terracotta)
                 event.shaped(
-                    Item.of(`botanypotstiers:elite_${color}_${type}_botany_pot`, 1),
+                    Item.of(`botanypotstiers:elite_${color}_terracotta_botany_pot`, 1),
                     [
                         'UPU',
                         'IOI', 
@@ -155,7 +155,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         P: 'minecraft:ender_pearl',
                         O: 'botanypots:terracotta_botany_pot'
                     }
-                ).id(`kubejs:botanypotstiers/elite_${color}_${type}_botany_pot`)   
+                ).id(`kubejs:botanypotstiers/elite_${color}_terracotta_botany_pot`)   
             // Elite Botany Pot #2(Terracotta)    
                 event.shaped(
                     Item.of(`botanypotstiers:elite_${color}_terracotta_botany_pot`, 1),

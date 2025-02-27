@@ -19,5 +19,5 @@ ServerEvents.recipes(event => {
     event.blasting('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/blasting/salt_bucket_blasting')
     event.smelting('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/blasting/salt_bucket_smelting')
     event.smoking('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/blasting/salt_bucket_smoking')
-   
+
 })
