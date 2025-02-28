@@ -9,7 +9,7 @@
 	#Enable/Disable the butchers house structure
 	Structures = true
 	#Enalbe/Disable guide book on first join
-	"Guide Book" = true
+	"Guide Book" = false
 	#Enable this to use vanilla foods instead of butchery's foods
 	"Vanilla Drops" = false
 	#Enable/Disable blood spreading
