@@ -3,7 +3,7 @@
 
 ServerEvents.highPriorityData(events => {
 
-    //Defining Parts
+    // Defining Parts
     const locations = [
         'desert', 'plains', 'taiga', 'idas_taiga'
     ]; // Defining locations
@@ -20,7 +20,7 @@ ServerEvents.highPriorityData(events => {
         'tier1', 'tier2', 'tier3', 'tier4', 'tier5',  'tier6'
     ]; // Defining tiers
 
-    //Similar loottable datapacks
+    // Similar loottable datapacks
     locations.forEach(location => {
         buildings.forEach(building => {
             types.forEach(type => {
@@ -51,7 +51,7 @@ ServerEvents.highPriorityData(events => {
         });
     });
 
-    //Unique lootable datapack
+    // Unique lootable datapack
     events.addJson('lightmanscurrency:loot_tables/chest/ancient_city/ancient_ruins', {
         type: "minecraft:archaeology",
         pools: [],
