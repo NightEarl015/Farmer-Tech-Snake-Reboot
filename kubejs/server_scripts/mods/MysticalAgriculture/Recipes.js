@@ -117,14 +117,14 @@ ServerEvents.recipes(event => {
 
     // Similar recipes
     // Essence Conversion
-    function infusion(output, essence){
-        event.shaped(output, [
+    function infusion(highessence, lowessence){
+        event.shaped(highessence, [
             'OOO',
             'OIO',
             'OOO'
         ], {
             I: 'mysticalagriculture:infusion_crystal',
-            O: essence
+            O: lowessence
         })
     }
     infusion('mysticalagriculture:prudentium_essence', 'mysticalagriculture:inferium_essence')
@@ -134,8 +134,8 @@ ServerEvents.recipes(event => {
     infusion('mysticalagradditions:insanium_essence', 'mysticalagriculture:imperium_essence')
 
     // Farmland of Essence
-    function farmland(output, essence){
-        event.shaped(output, [
+    function farmland(farmland, essence){
+        event.shaped(farmland, [
             'OOO',
             'OIO',
             'OOO'
@@ -151,8 +151,8 @@ ServerEvents.recipes(event => {
     farmland('mysticalagradditions:insanium_farmland', 'mysticalagradditions:insanium_essence')
 
     // Block of Essence
-    function block(output, essence){
-        event.shaped(output, [
+    function block(block, essence){
+        event.shaped(block, [
             'OOO',
             'OOO',
             'OOO'
