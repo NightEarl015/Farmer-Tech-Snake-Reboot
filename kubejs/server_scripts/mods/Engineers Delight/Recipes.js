@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
             },
             {
                 chance: 0.25,
-                output:{item: 'farmersdelight:straw', count: 4}
+                output:{item: 'farmersdelight:straw', count: 4 }
             }
         ]
     }).id('kubejs:tmted/crusher/wheat_flour_from_bale')
