@@ -22,9 +22,8 @@ ServerEvents.recipes(event => {
         'invar', 'iridium', 'lead', 'nickel', 'niter', 'platinum', 'silver', 'fluix', 'certus_quartz', 'steel', 'tin', 'titanium', 'uranium', 'zinc', 'aluminum', 'brass', 'bronze', 'constantan', 'electrum'
     ]; // Defining materials
     materials.forEach(material => {
-        event.remove({output: `alltheores:${material}_dust`})
-        event.remove({input: `alltheores:${material}_ingot`})
-        event.remove({output: `alltheores:${material}_ingot`})
+        event.remove({id: `mysticalagriculture:essence/common/${material}_ingot`})
+        event.remove({id: `mysticalagriculture:essence/appliedenergistics2/${material}_dust`})  
     });
     
     event.remove({id: "mysticalagriculture:essence/appliedenergistics2/silicon"})
