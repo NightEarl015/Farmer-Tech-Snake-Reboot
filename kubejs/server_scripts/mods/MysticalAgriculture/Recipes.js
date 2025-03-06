@@ -206,12 +206,21 @@ ServerEvents.recipes(event => {
     poly2('mekanism:dust_netherite', 'mysticalagriculture:netherite_essence') 
     poly2('6x minecraft:quartz', 'mysticalagriculture:nether_quartz_essence')
     poly2('10x minecraft:amethyst_shard', 'mysticalagriculture:amethyst_essence') //Minecraft
-    //Disabled Ores
-    /*
+})
+// Disabled Ores
+/*
     poly2("2x #forge:dusts/constantan", 'mysticalagriculture:constantan_essence')
     poly2("3x #forge:raw_materials/platinum", 'mysticalagriculture:platinum_essence')
     poly2("3x #forge:raw_materials/nickel", 'mysticalagriculture:nickel_essence')
     poly2("2x #forge:raw_materials/iridium", 'mysticalagriculture:iridium_essence')
     poly2("2x #forge:dusts/invar", 'mysticalagriculture:invar_essence') 
-    */ 
-})
+*/     
+
+// Disabled IDs
+/*
+.id('kubejs:mysticalagriculture/essence/appliedenergistics/certus_quartz')
+.id('kubejs:mysticalagriculture/essence/appliedenergistics/fluix') 
+.id(`kubejs:mysticalagriculture/${rawmaterial}`)
+.id(`kubejs:mysticalagriculture/${materialdust}`)
+*/   
+

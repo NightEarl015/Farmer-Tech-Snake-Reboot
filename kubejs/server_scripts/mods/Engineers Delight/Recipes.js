@@ -3,8 +3,8 @@
 
 ServerEvents.recipes(event => {
     // Removed Recipes
-    event.remove({ id: 'tmted:crusher/wheat_flour' })
-    event.remove({ id: 'tmted:crusher/wheat_flour_from_bale' })
+    event.remove({id: 'tmted:crusher/wheat_flour' })
+    event.remove({id: 'tmted:crusher/wheat_flour_from_bale' })
 
     // Rewrited Recipes
     event.custom({
