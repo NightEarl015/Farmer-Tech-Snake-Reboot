@@ -1,4 +1,22 @@
 {
   "feature": "pneumaticcraft:oil_lake",
-  "placement": []
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 10000
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
+    },
+    {
+      "type": "pneumaticcraft:oil_lake_filter"
+    }
+  ]
 }
