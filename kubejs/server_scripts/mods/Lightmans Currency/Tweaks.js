@@ -42,30 +42,15 @@ ServerEvents.highPriorityData(events => {
                         pools: [],
                         random_sequence: `lightmanscurrency:loot_addons/${type}/${tier}`  
                     })
-
-                    events.addJson(`lightmanscurrency:worldgen/processor_list/${location}_${building}_archaeology`, {
-                        processors: []  
-                    })
                 });
             });
         });
     });
 
     // Unique lootable datapack
-    events.addJson('lightmanscurrency:loot_tables/chest/ancient_city/ancient_ruins', {
-        type: "minecraft:archaeology",
-        pools: [],
-        random_sequence: "lightmanscurrency:chest/ancient_city/ancient_ruins"
-    })
     events.addJson('lightmanscurrency:loot_tables/misc/ancient_netherite_coins', {
         type: "minecraft:archaeology",
         pools: [],
         random_sequence: "lightmanscurrency:misc/ancient_netherite_coins" 
-    })
-    events.addJson('lightmanscurrency:worldgen/processor_list/ancient_ruins', {
-        processors: []
-    })
-    events.addJson('lightmanscurrency:worldgen/processor_list/das_taiga_large_bank', {
-        processors: []
     })
 })

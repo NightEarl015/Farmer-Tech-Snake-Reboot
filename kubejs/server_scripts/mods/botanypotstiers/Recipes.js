@@ -58,7 +58,7 @@ if (Platform.isLoaded('botanypotstiers')) {
         event.shaped(
             Item.of('botanypotstiers:elite_terracotta_hopper_botany_pot', 1),
             [
-                'XXX',
+                'A',
                 'IOI', 
                 'IPI'
             ],
@@ -66,7 +66,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 I: 'minecraft:iron_block',
                 O: 'minecraft:ender_pearl',
                 P: 'botanypots:terracotta_hopper_botany_pot',
-                X: 'minecraft:air'          
+                A: 'minecraft:air'          
             }
         ).id('kubejs:botanypotstiers/elite_hopper_botany_pot_3')
 
@@ -116,7 +116,7 @@ if (Platform.isLoaded('botanypotstiers')) {
         event.shaped(
             Item.of('botanypotstiers:ultra_terracotta_hopper_botany_pot', 1),
             [
-                'XXX',
+                'A',
                 'IOI', 
                 'IPI'
             ],
@@ -124,7 +124,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 I: 'minecraft:diamond_block',
                 O: 'minecraft:nether_star',
                 P: 'botanypots:terracotta_hopper_botany_pot',
-                X: 'minecraft:air'
+                A: 'minecraft:air'
                 
             }
         ).id('kubejs:botanypots/ultra_hopper_botany_pot_3')
@@ -160,7 +160,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:elite_${color}_terracotta_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -168,7 +168,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:iron_block',
                         P: 'minecraft:ender_pearl',
                         O: `botanypots:${color}_terracotta_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/elite_${color}_terracotta_botany_pot_2`)
             // Elite Botany Pot #1(Concrete)
@@ -190,7 +190,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:elite_${color}_concrete_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -198,7 +198,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:iron_block',
                         P: 'minecraft:ender_pearl',
                         O: `botanypots:${color}_concrete_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/elite_${color}_concrete_botany_pot_2`)    
             // Elite Hopper Botany Pot #1(Terracotta)
@@ -228,7 +228,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:elite_${color}_terracotta_hopper_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -236,7 +236,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:iron_block',
                         P: 'minecraft:ender_pearl',
                         O: `botanypots:${color}_terracotta_hopper_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/elite_${color}_terracotta_hopper_botany_pot_3`)
             // Elite Hopper Botany Pot #4(Terracotta)
@@ -282,7 +282,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:elite_${color}_concrete_hopper_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -290,7 +290,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:iron_block',
                         P: 'minecraft:ender_pearl',
                         O: `botanypots:${color}_concrete_hopper_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/elite_${color}_concrete_hopper_botany_pot_3`)
             // Elite Hopper Botany Pot 4(Concrete)
@@ -330,7 +330,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:ultra_${color}_terracotta_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -338,7 +338,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:diamond_block',
                         P: 'minecraft:nether_star',
                         O: `botanypotstiers:elite_${color}_terracotta_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/ultra_${color}_terracotta_botany_pot_2`)
             // Ultra Botany Pot #1(Concrete)
@@ -360,7 +360,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:ultra_${color}_concrete_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -368,7 +368,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:diamond_block',
                         P: 'minecraft:nether_star',
                         O: `botanypotstiers:elite_${color}_concrete_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/ultra_${color}_concrete_botany_pot_2`)    
             // Ultra Hopper Botany Pot #1(Terracotta)
@@ -398,7 +398,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:ultra_${color}_terracotta_hopper_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -406,7 +406,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:diamond_block',
                         P: 'minecraft:nether_star',
                         O: `botanypotstiers:elite_${color}_terracotta_hopper_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/ultra_${color}_terracotta_hopper_botany_pot_3`)
             // Ultra Hopper Botany Pot #4(Terracotta)
@@ -452,7 +452,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                 event.shaped(
                     Item.of(`botanypotstiers:ultra_${color}_concrete_hopper_botany_pot`, 1),
                     [
-                        'XXX',
+                        'A',
                         'IPI', 
                         'IOI'
                     ],
@@ -460,7 +460,7 @@ if (Platform.isLoaded('botanypotstiers')) {
                         I: 'minecraft:diamond_block',
                         P: 'minecraft:nether_star',
                         O: `botanypotstiers:elite_${color}_concrete_hopper_botany_pot`,
-                        X: 'minecraft:air'
+                        A: 'minecraft:air'
                     }
                 ).id(`kubejs:botanypotstiers/ultra_${color}_concrete_hopper_botany_pot_3`)
             // Ultra Hopper Botany Pot 4(Concrete)

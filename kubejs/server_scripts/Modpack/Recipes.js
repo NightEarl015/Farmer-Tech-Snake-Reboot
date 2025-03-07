@@ -34,13 +34,14 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('kubejs:small_wood_gear', 1), 
         [
-        ' S ',
+        'S',
         'SPS', 
-        ' S'
+        'S'
         ],
         {
-        S: 'minecraft:stone',
-        P: '#minecraft:planks'
+            X: 'minecraft:air',
+            S: 'minecraft:stone',
+            P: "#minecraft:planks"
         }
     ).id('kubejs:small_wood_gear')
 
@@ -48,12 +49,12 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:large_wood_gear', 1), 
         [
         'PSP',
-        'SWS', 
+        'SPS', 
         'PSP'
         ],
         {
-        S: 'minecraft:stone',
-        P: '#minecraft:planks'
+            S: 'minecraft:stone',
+            P: "#minecraft:planks"
         }
     ).id('kubejs:large_wood_gear')
 })
