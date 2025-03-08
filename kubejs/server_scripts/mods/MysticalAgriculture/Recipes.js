@@ -32,13 +32,11 @@ ServerEvents.recipes(event => {
 
 
 
-
     // Rewrited recipes
 
     // Unique recipes
     // Infusion Crystal
-    event.shaped(
-        Item.of('mysticalagriculture:infusion_crystal', 1),
+    event.shaped('mysticalagriculture:infusion_crystal',
         [
             'IPI',
             'POP', 
@@ -53,8 +51,7 @@ ServerEvents.recipes(event => {
 
 
     // Master Infusion Crystal
-    event.shaped(
-        Item.of('mysticalagriculture:master_infusion_crystal', 1),
+    event.shaped('mysticalagriculture:master_infusion_crystal',
         [
             'IPI',
             'POP', 
@@ -69,8 +66,7 @@ ServerEvents.recipes(event => {
     
 
     // Mystical Fertilizer
-    event.shaped(
-        Item.of('mysticalagriculture:mystical_fertilizer', 1),
+    event.shaped('mysticalagriculture:mystical_fertilizer',
         [
             'IPI',
             'PIP', 
@@ -95,8 +91,7 @@ ServerEvents.recipes(event => {
   
 
     //Prudentium Essence Uncraft
-    event.shapeless(
-        Item.of('mysticalagriculture:inferium_essence', 8),
+    event.shapeless('8x mysticalagriculture:inferium_essence',
         [
         'mysticalagriculture:prudentium_essence'
         ]
@@ -104,12 +99,26 @@ ServerEvents.recipes(event => {
 
 
     //Insanium Essence Uncraft
-    event.shapeless(
-        Item.of('mysticalagriculture:supremium_essence', 8),
+    event.shapeless('8x mysticalagriculture:supremium_essence',
         [
         'mysticalagradditions:insanium_essence'
         ]
     ).id('kubejs:mysticalagriculture/insanium_essence_uncraft')
+
+    // Infusion Pedestal 
+    event.replaceInput(
+        { output: 'mysticalagriculture:infusion_pedestal' }, 
+        'minecraft:stone',            
+        'botania:livingrock'         
+    )
+
+    //Infusion Altar 
+    event.replaceInput(
+        { output: 'mysticalagriculture:infusion_altar' }, 
+        'minecraft:stone',            
+        'botania:livingrock'         
+    )
+      
 
 
 

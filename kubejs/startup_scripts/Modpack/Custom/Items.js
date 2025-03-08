@@ -30,4 +30,8 @@ StartupEvents.registry("item", event=>{
     .displayName('Small Wood Gear')
     .maxStackSize(64)
     .tag('fts:small_wood_gear')
+
+    event.create('modpack_icon')
+    .displayName('Farmer & Tech Snake:Reboot')
+    .maxStackSize(1)
 })

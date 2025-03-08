@@ -101,7 +101,7 @@
 	armHalign = "RIGHT"
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 189
+	xArmPos = 208
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
 	yArmPos = 70

@@ -3,8 +3,7 @@
 
 ServerEvents.recipes(event => {
 
-    event.shaped(
-        Item.of('kubejs:block_industrial_salt', 1), 
+    event.shaped('kubejs:block_industrial_salt',
         [
           'SSS',
           'SSS', 
@@ -31,30 +30,27 @@ ServerEvents.recipes(event => {
         conditions: [{type: 'thermal:flag', flag: 'mod_mekanism'}]
     }).id('kubejs:thermal/compat/press_industrial_salt_unpacking')
 
-    event.shaped(
-        Item.of('kubejs:small_wood_gear', 1), 
+    event.shaped('kubejs:small_wood_gear',
         [
-        'S',
+        ' S ',
         'SPS', 
-        'S'
+        ' S '
         ],
         {
-            X: 'minecraft:air',
             S: 'minecraft:stone',
             P: "#minecraft:planks"
         }
-    ).id('kubejs:small_wood_gear')
+    ).id("kubejs:small_wood_gear")
 
-    event.shaped(
-        Item.of('kubejs:large_wood_gear', 1), 
+    event.shaped('kubejs:large_wood_gear',
         [
-        'PSP',
-        'SPS', 
-        'PSP'
+        "PSP",
+        "SPS", 
+        "PSP"
         ],
         {
             S: 'minecraft:stone',
             P: "#minecraft:planks"
         }
-    ).id('kubejs:large_wood_gear')
+    ).id("kubejs:large_wood_gear")
 })
