@@ -7,9 +7,9 @@ ServerEvents.recipes(event => {
     .mobOutput(
         SummoningOutput.mob('wither')
             .count(1)
-            .offset(0, 10, 0)
+            .offset(2, 15, 2)
             .spread(4, 0, 4)
-            .data({ Health: 300, Attributes: [
+            .data({ Health: 400, Attributes: [
                 { Name: 'generic.max_health', Base: 400 },
                 { Name: 'armor', Base: 50 },
             ] 
