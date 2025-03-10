@@ -8,8 +8,7 @@ ServerEvents.recipes(event => {
     // Rewrited recipes
 
     // Salt Bucket Uncraft
-    event.shapeless(
-        Item.of('salt:salt'),
+    event.shapeless('salt:salt',
         [
             'braziliandelight:salt_bucket'
         ],

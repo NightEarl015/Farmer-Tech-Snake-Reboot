@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     });
 
     const materials = [
-        'invar', 'iridium', 'lead', 'nickel', 'niter', 'platinum', 'silver', 'fluix', 'certus_quartz', 'steel', 'tin', 'titanium', 'uranium', 'zinc', 'aluminum', 'brass', 'bronze', 'constantan', 'electrum'
+        'invar', 'iridium', 'lead', 'niter', 'platinum', 'silver', 'fluix', 'certus_quartz', 'steel', 'tin', 'titanium', 'uranium', 'zinc', 'aluminum', 'brass', 'bronze', 'constantan', 'electrum'
     ]; // Defining materials
     materials.forEach(material => {
         event.remove({id: `mysticalagriculture:essence/common/${material}_ingot`})
@@ -212,15 +212,15 @@ ServerEvents.recipes(event => {
     poly2("2x #forge:raw_materials/copper", 'mysticalagriculture:copper_essence')
     poly2("2x #forge:raw_materials/iron", 'mysticalagriculture:iron_essence')
     poly2("2x #forge:raw_materials/gold", 'mysticalagriculture:gold_essence')
+    poly2("2x #forge:dusts/constantan", 'mysticalagriculture:constantan_essence')
+    poly2("3x #forge:raw_materials/nickel", 'mysticalagriculture:nickel_essence')
     poly2('mekanism:dust_netherite', 'mysticalagriculture:netherite_essence') 
     poly2('6x minecraft:quartz', 'mysticalagriculture:nether_quartz_essence')
     poly2('10x minecraft:amethyst_shard', 'mysticalagriculture:amethyst_essence') //Minecraft
 })
 // Disabled Ores
 /*
-    poly2("2x #forge:dusts/constantan", 'mysticalagriculture:constantan_essence')
     poly2("3x #forge:raw_materials/platinum", 'mysticalagriculture:platinum_essence')
-    poly2("3x #forge:raw_materials/nickel", 'mysticalagriculture:nickel_essence')
     poly2("2x #forge:raw_materials/iridium", 'mysticalagriculture:iridium_essence')
     poly2("2x #forge:dusts/invar", 'mysticalagriculture:invar_essence') 
 */     

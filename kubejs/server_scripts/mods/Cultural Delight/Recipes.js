@@ -1,5 +1,5 @@
-// All tweaks to Cultural Delight
-// Tweaked by NightEarl015
+// All recipe modifications to Cultural Delight
+// Modified by NightEarl015
 
 ServerEvents.recipes(event => {
 

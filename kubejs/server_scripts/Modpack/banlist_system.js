@@ -1,5 +1,5 @@
-// Banning lists and removing the recipe system
-// Authored by MtpDev
+// Banning items and removing the recipe from banlist system
+// Original by MtpDev
 
 let bannedItems = [
     'createendertransmission:chunk_loader', 
@@ -8,7 +8,7 @@ let bannedItems = [
 
 PlayerEvents.inventoryChanged(event => {
   let player = event.player;
-  let inventory = player.inventory.items; // NeoForge inventory access
+  let inventory = player.inventory.items; // Forge inventory access
 
   if (!bannedItems.includes(event.item.id)) return;
 
