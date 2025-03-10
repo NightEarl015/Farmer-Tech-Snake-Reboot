@@ -1,0 +1,34 @@
+{
+  "modId": "othermods",
+  "group": {
+    "name": "Othermods Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "kubejs:copper_coin"
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "createbb:ephedra_seeds",
+      "payment": {
+        "item": "kubejs:copper_coin",
+        "count": 6
+      }
+    },
+    {
+      "output": "integrateddynamics:menril_sapling",
+      "payment": {
+        "item": "kubejs:copper_coin",
+        "count": 4
+      }
+    },
+    {
+      "output": "supplementaries:flax",
+      "payment": {
+        "item": "kubejs:copper_coin",
+        "count": 2
+      }
+    }
+  ]
+}

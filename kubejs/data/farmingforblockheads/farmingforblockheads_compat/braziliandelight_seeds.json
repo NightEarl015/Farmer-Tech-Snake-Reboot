@@ -1,0 +1,49 @@
+{
+  "modId": "braziliandelight",
+  "group": {
+    "name": "Brazilian Delight Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "kubejs:copper_coin"
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "braziliandelight:garlic_bulb"
+    },
+    {
+      "output": "braziliandelight:black_beans"
+    },
+    {
+      "output": "braziliandelight:carioca_beans"
+    },
+    {
+      "output": "braziliandelight:collard_greens_seeds"
+    },
+    {
+      "output": "braziliandelight:coffee_beans"
+    },
+    {
+      "output": "braziliandelight:kernels"
+    },
+    {
+      "output": "braziliandelight:white_kernels"
+    },
+    {
+      "output": "braziliandelight:guarana_seeds"
+    },
+    {
+      "output": "braziliandelight:cassava_root"
+    },
+    {
+      "output": "braziliandelight:green_coconut"
+    },
+    {
+      "output": "braziliandelight:coconut"
+    },
+    {
+      "output": "braziliandelight:bean_pod"
+    }
+  ]
+}

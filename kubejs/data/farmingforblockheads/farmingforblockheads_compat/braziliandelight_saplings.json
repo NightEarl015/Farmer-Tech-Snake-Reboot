@@ -1,0 +1,22 @@
+{
+  "modId": "braziliandelight",
+  "group": {
+    "name": "Brazilian Delight Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "kubejs:copper_coin"
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": "braziliandelight:lemon_sapling"
+    },
+    {
+      "output": "braziliandelight:coconut_palm_sapling"
+    },
+    {
+      "output": "braziliandelight:acai_palm_sapling"
+    }
+  ]
+}
