@@ -1,7 +1,7 @@
 // FFB Compatible from Brazilian Delight
 // Authored by NightEarl015
 
-let seeds = [
+let braziSeeds = [
   {
     output: "braziliandelight:garlic_bulb"
   },
@@ -40,7 +40,7 @@ let seeds = [
   }
 ];
 
-let saplings = [
+let braziSaplings = [
   {
     "output": "braziliandelight:lemon_sapling"
   },
@@ -63,7 +63,7 @@ ServerEvents.highPriorityData(events => {
       },
       defaultCategory: "farmingforblockheads:seeds"
     },
-    customEntries: seeds,
+    customEntries: braziSeeds,
   })
   events.addJson('farmingforblockheads:farmingforblockheads_compat/braziliandelight_saplings', {
     modId: "braziliandelight",
@@ -75,6 +75,6 @@ ServerEvents.highPriorityData(events => {
       },
       defaultCategory: "farmingforblockheads:saplings"
     },
-    customEntries: saplings,
+    customEntries: braziSaplings,
   })
 })
