@@ -1,5 +1,6 @@
 // All tweaks to Farming for Blockheads
 // Tweaked by NightEarl015
+
 let vanliaSeeds = [
   {
     "output": "minecraft:wheat_seeds"

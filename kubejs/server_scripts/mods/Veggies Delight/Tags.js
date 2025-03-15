@@ -2,6 +2,14 @@
 // Modified by NightEarl015
 
 ServerEvents.tags('item', event => {
+  // Rustic Delight Compat
+  event.add('veggiesdelight:bell_pepper', [
+    'rusticdelight:bell_pepper_green',
+    'rusticdelight:bell_pepper_yellow',
+    'rusticdelight:bell_pepper_red',
+  ])
+
+  // Ecliptic Seasons Compat
   event.add('eclipticseasons:crops/spring', [
     'veggiesdelight:mature_dandelion',
   ])
