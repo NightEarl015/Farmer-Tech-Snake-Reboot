@@ -1,7 +1,7 @@
 // All tweaks to Farming for Blockheads
 // Tweaked by NightEarl015
 
-let vanliaSeeds = [
+let vanillaSeeds = [
   {
     "output": "minecraft:wheat_seeds"
   },
@@ -49,7 +49,7 @@ let vanliaSeeds = [
   }
 ];
 
-let vanliaSaplings = [
+let vanillaSaplings = [
   {
     "output": "minecraft:oak_sapling"
   },
@@ -94,7 +94,7 @@ let vanliaSaplings = [
   }
 ];
 
-let vanliaFlowers =[
+let vanillaFlowers =[
   {
     "output": "minecraft:dandelion"
   },
@@ -144,7 +144,7 @@ ServerEvents.lowPriorityData(events => {
       },
       defaultCategory: "farmingforblockheads:seeds"
     },
-    customEntries: vanliaSeeds,
+    customEntries: vanillaSeeds,
   })
   events.addJson('farmingforblockheads:farmingforblockheads_compat/vanilla_saplings', {
     modId: "minecraft",
@@ -156,7 +156,7 @@ ServerEvents.lowPriorityData(events => {
       },
       defaultCategory: "farmingforblockheads:saplings"
     },
-    customEntries: vanliaSaplings,
+    customEntries: vanillaSaplings,
   })
   events.addJson('farmingforblockheads:farmingforblockheads_compat/vanilla_flowers', {
     modId: "minecraft",
@@ -168,20 +168,6 @@ ServerEvents.lowPriorityData(events => {
       },
       defaultCategory: "farmingforblockheads:flowers"
     },
-    customEntries: vanliaFlowers,
-  })
-  events.addJson('farmingforblockheads:farmingforblockheads_compat/vanilla_bone_meal', {
-    modId: "minecraft",
-    group: {
-      name: "Bone Meal",
-      enabledByDefault: true,
-      defaultPayment: {
-        item: "kubejs:copper_coin"
-      },
-      defaultCategory: "farmingforblockheads:other"
-    },
-    customEntries: {
-      "output": "minecraft:bone_meal"
-    }
+    customEntries: vanillaFlowers,
   })
 })

@@ -10,4 +10,8 @@ ServerEvents.highPriorityData(events => {
     feature: "braziliandelight:patch_wild_garlic",
     placement: [],
   })
+  events.addJson('braziliandelight:worldgen/placed_feature/patch_wild_corn_placed', {
+    feature: "braziliandelight:patch_wild_garlic",
+    placement: [],
+  })
 })
