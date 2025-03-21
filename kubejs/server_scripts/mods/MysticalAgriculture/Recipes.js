@@ -8,11 +8,11 @@ ServerEvents.recipes(event => {
         'apple', 'coal', 'essence', 'sword', 'pickaxe', 'shovel', 'axe', 'hoe', 'watering_can', 'bow', 'crossbow', 'shears', 'fishing_rod', 'scythe', 'sickle', 'helmet', 'chestplate', 'leggings', 'boots', 'paxel', 'farmland'
     ]; // Defining types
 
-    const levels = [
+    const essencelevels = [
         'inferium', 'prudentium', 'tertium', 'supremium', 'imperium'
     ]; // Defining levels
     types.forEach(type => {
-        levels.forEach(level => {
+        essencelevels.forEach(level => {
             event.remove({output: `mysticalagriculture:${level}_${type}`})
             event.remove({output: `mysticalagradditions:insanium_${type}`})// Remove Essence kit
         });
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
         ], {
             I: 'mysticalagriculture:infusion_crystal',
             O: lowessence
-        })
+        }).id(`kubejs:mysticalagriculture/${highessence.split(":")[1]}`)
     }
     infusion('mysticalagriculture:prudentium_essence', 'mysticalagriculture:inferium_essence')
     infusion('mysticalagriculture:tertium_essence', 'mysticalagriculture:prudentium_essence')
@@ -143,15 +143,15 @@ ServerEvents.recipes(event => {
     infusion('mysticalagradditions:insanium_essence', 'mysticalagriculture:imperium_essence')
 
     // Farmland of Essence
-    function farmland(farmland, essence){
-        event.shaped(farmland, [
+    function farmland(essencefarmland, essence){
+        event.shaped(essencefarmland, [
             'OOO',
             'OIO',
             'OOO'
         ], {
             I: 'minecraft:farmland',
             O: essence
-        })
+        }).id(`kubejs:mysticalagriculture/${essencefarmland.split(":")[1]}`)
     }
     farmland('mysticalagriculture:inferium_farmland', 'mysticalagriculture:inferium_essence')
     farmland('mysticalagriculture:prudentium_farmland', 'mysticalagriculture:prudentium_essence')
@@ -160,14 +160,14 @@ ServerEvents.recipes(event => {
     farmland('mysticalagradditions:insanium_farmland', 'mysticalagradditions:insanium_essence')
 
     // Block of Essence
-    function block(block, essence){
-        event.shaped(block, [
+    function block(essenceblock, essence){
+        event.shaped(essenceblock, [
             'OOO',
             'OOO',
             'OOO'
         ], {
             O: essence
-        })
+        }).id(`kubejs:mysticalagriculture/${essenceblock.split(":")[1]}`)
     }
     block('mysticalagriculture:inferium_block', 'mysticalagriculture:inferium_essence')
     block('mysticalagriculture:prudentium_block', 'mysticalagriculture:prudentium_essence')
@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
             'OOO'
         ], {
             O: essence
-        })
+        }).id(`kubejs:mysticalagriculture/poly1/${output.split(":")[1]}`)
     }
     poly1("2x #forge:silicon", 'mysticalagriculture:silicon_essence')
     poly1("3x #forge:dusts/sulfur", 'mysticalagriculture:sulfur_essence')
@@ -194,7 +194,7 @@ ServerEvents.recipes(event => {
             'OOO'
         ], {
             O: essence
-        })
+        }).id(`kubejs:mysticalagriculture/poly2/${output.split(":")[1]}`)
     }
     poly2('3x ae2:certus_quartz_crystal', 'mysticalagriculture:certus_quartz_essence')
     poly2('3x ae2:fluix_crystal', 'mysticalagriculture:fluix_essence')
@@ -225,11 +225,4 @@ ServerEvents.recipes(event => {
     poly2("2x #forge:dusts/invar", 'mysticalagriculture:invar_essence') 
 */     
 
-// Disabled IDs
-/*
-.id('kubejs:mysticalagriculture/essence/appliedenergistics/certus_quartz')
-.id('kubejs:mysticalagriculture/essence/appliedenergistics/fluix') 
-.id(`kubejs:mysticalagriculture/${rawmaterial}`)
-.id(`kubejs:mysticalagriculture/${materialdust}`)
-*/   
 

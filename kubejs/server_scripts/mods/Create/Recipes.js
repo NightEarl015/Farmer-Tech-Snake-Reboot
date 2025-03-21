@@ -71,9 +71,4 @@ ServerEvents.recipes(event => {
   create_coin_maker('5x kubejs:thermal_coin', '#forge:ingots/lumium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/enderium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/netherite');
-
-
-    
-
-
 })

@@ -34,7 +34,8 @@ ServerEvents.recipes(event => {
 
     
   event.remove({type: 'thermal:numismatic_fuel'})
-  
+
+  // Rewrited recipes
   event.recipes.thermal.numismatic_fuel('kubejs:thermal_coin').energy(64000)
 
   /**
@@ -42,21 +43,21 @@ ServerEvents.recipes(event => {
    * @param {OutputItem_} coin 
    * @param {InputItem_} material
    */
-  function coin_maker(coin, material) {
+  function thermal_coin_maker(coin, material) {
     event.recipes.thermal.press(coin, [material, 'thermal:press_coin_die'])
     .energy(1600)
-    .id(`kubejs:thermal/pressing/${material.split("/")[1]}_to_coin`);  
+    .id(`kubejs:thermal/pressing/${material.split("/")[1]}_to_coin`)  
   }
-  coin_maker('kubejs:thermal_coin', '#forge:ingots/copper');
-  coin_maker('kubejs:thermal_coin', '#forge:ingots/prismalium');
-  coin_maker('kubejs:thermal_coin', '#forge:ingots/melodium');
-  coin_maker('2x kubejs:thermal_coin', '#forge:ingots/iron');
-  coin_maker('2x kubejs:thermal_coin', '#forge:ingots/stellarium');
-  coin_maker('4x kubejs:thermal_coin', '#forge:ingots/signalum');
-  coin_maker('4x kubejs:thermal_coin', '#forge:ingots/gold');
-  coin_maker('5x kubejs:thermal_coin', '#forge:ingots/lumium');
-  coin_maker('10x kubejs:thermal_coin', '#forge:ingots/enderium');
-  coin_maker('10x kubejs:thermal_coin', '#forge:ingots/netherite');
+  thermal_coin_maker('kubejs:thermal_coin', '#forge:ingots/copper');
+  thermal_coin_maker('kubejs:thermal_coin', '#forge:ingots/prismalium');
+  thermal_coin_maker('kubejs:thermal_coin', '#forge:ingots/melodium');
+  thermal_coin_maker('2x kubejs:thermal_coin', '#forge:ingots/iron');
+  thermal_coin_maker('2x kubejs:thermal_coin', '#forge:ingots/stellarium');
+  thermal_coin_maker('4x kubejs:thermal_coin', '#forge:ingots/signalum');
+  thermal_coin_maker('4x kubejs:thermal_coin', '#forge:ingots/gold');
+  thermal_coin_maker('5x kubejs:thermal_coin', '#forge:ingots/lumium');
+  thermal_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/enderium');
+  thermal_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/netherite');
   
   const materials= [
     'nickel', 'silver', 'tin', 'steel', 'rose_gold', 'bronze', 'invar', 'electrum', 'constantan'
@@ -67,4 +68,20 @@ ServerEvents.recipes(event => {
     .energy(1600)
     .id(`kubejs:thermal/pressing/${material}_to_coin`)
   });
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:industrial_salt', count: 9},{item: 'thermal:press_packing_3x3_die'}],
+    result:{ item: 'kubejs:block_industrial_salt'},
+    energy: 400,
+    conditions: [{type: 'thermal:flag', flag: 'mod_mekanism'}]
+  }).id('kubejs:thermal/compat/press_industrial_salt_packing')
+
+  event.custom({
+    type: 'thermal:press',
+    ingredients: [{item: 'kubejs:block_industrial_salt'},{item: 'thermal:press_unpacking_die'}],
+    result:{ item: 'kubejs:industrial_salt', count: 9},
+    energy: 400,
+    conditions: [{type: 'thermal:flag', flag: 'mod_mekanism'}]
+  }).id('kubejs:thermal/compat/press_industrial_salt_unpacking')
 })

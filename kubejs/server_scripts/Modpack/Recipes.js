@@ -14,22 +14,6 @@ ServerEvents.recipes(event => {
         }
     ).id('kubejs:storage_blocks/industrial_salt')
 
-    event.custom({
-        type: 'thermal:press',
-        ingredients: [{item: 'kubejs:industrial_salt', count: 9},{item: 'thermal:press_packing_3x3_die'}],
-        result:{ item: 'kubejs:block_industrial_salt'},
-        energy: 400,
-        conditions: [{type: 'thermal:flag', flag: 'mod_mekanism'}]
-    }).id('kubejs:thermal/compat/press_industrial_salt_packing')
-
-    event.custom({
-        type: 'thermal:press',
-        ingredients: [{item: 'kubejs:block_industrial_salt'},{item: 'thermal:press_unpacking_die'}],
-        result:{ item: 'kubejs:industrial_salt', count: 9},
-        energy: 400,
-        conditions: [{type: 'thermal:flag', flag: 'mod_mekanism'}]
-    }).id('kubejs:thermal/compat/press_industrial_salt_unpacking')
-
     event.shaped('kubejs:small_wood_gear',
         [
         ' S ',

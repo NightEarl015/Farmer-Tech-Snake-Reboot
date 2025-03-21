@@ -2,16 +2,19 @@
 // Tweaked by NightEarl015
 
 ServerEvents.highPriorityData(events => {
-  events.addJson('braziliandelight:worldgen/placed_feature/patch_wild_coffee_berries_placed', {
-    feature: "braziliandelight:patch_wild_coffee_berries",
-    placement: [],
-  })
-  events.addJson('braziliandelight:worldgen/placed_feature/patch_wild_garlic_placed', {
-    feature: "braziliandelight:patch_wild_garlic",
-    placement: [],
-  })
-  events.addJson('braziliandelight:worldgen/placed_feature/patch_wild_corn_placed', {
-    feature: "braziliandelight:patch_wild_garlic",
-    placement: [],
-  })
+
+  const DisabledBrazilianDelightPlacedfeatures = [
+    'patch_wild_coffee_berries_placed',
+    'patch_wild_garlic_placed',
+    'patch_wild_corn_placed',
+    'patch_wild_corn_placed',
+    'coconut_palm_tree_placed'
+  ];
+
+  DisabledBrazilianDelightPlacedfeatures.forEach(DisabledBrazilianDelightPlacedfeature => {
+    events.addJson(`braziliandelight:worldgen/placed_feature/${DisabledBrazilianDelightPlacedfeature}`, {
+      feature: "braziliandelight:patch_wild_garlic",
+      placement: [],
+    })
+  });
 })
