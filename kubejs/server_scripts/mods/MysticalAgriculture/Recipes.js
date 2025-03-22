@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "mysticalagriculture:essence/appliedenergistics2/silicon"})
     event.remove({id: "mysticalagriculture:essence/common/sulfur"})
     event.remove({output: 'mysticalagriculture:mystical_fertilizer'})
+    event.remove({output: 'ae2:sky_stone_block'})
 
 
 
@@ -39,13 +40,13 @@ ServerEvents.recipes(event => {
     event.shaped('mysticalagriculture:infusion_crystal',
         [
             'IPI',
-            'POP', 
+            'PGP', 
             'IPI'
         ],
         {
             I: 'mysticalagriculture:inferium_essence',
             P: 'mysticalagriculture:prosperity_shard',
-            O: 'alltheores:sapphire'
+            G: 'rftoolsbase:infused_diamond'
         }
     ).id('kubejs:mysticalagriculture/infusion_crystal')
 
@@ -54,13 +55,13 @@ ServerEvents.recipes(event => {
     event.shaped('mysticalagriculture:master_infusion_crystal',
         [
             'IPI',
-            'POP', 
+            'PCP', 
             'IPI'
         ],
         {
             I: 'mysticalagriculture:supremium_essence',
             P: 'mysticalagriculture:prosperity_shard',
-            O: 'mysticalagriculture:infusion_crystal'
+            C: 'mysticalagriculture:infusion_crystal'
         }
     ).id('kubejs:mysticalagriculture/master_infusion_crystal')
     
@@ -68,12 +69,12 @@ ServerEvents.recipes(event => {
     // Mystical Fertilizer
     event.shaped('mysticalagriculture:mystical_fertilizer',
         [
-            'IPI',
-            'PIP', 
-            'IPI'
+            'FPF',
+            'PFP', 
+            'FPF'
         ],
         {
-            I: 'mysticalagriculture:fertilized_essence',
+            F: 'mysticalagriculture:fertilized_essence',
             P: 'mysticalagriculture:prosperity_shard',
 
         }

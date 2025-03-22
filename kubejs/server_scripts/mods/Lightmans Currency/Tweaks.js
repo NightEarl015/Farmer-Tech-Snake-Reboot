@@ -13,12 +13,12 @@ ServerEvents.highPriorityData(events => {
   ]; // Defining tiers
 
   // Similar loottable datapacks
-  lightmanscurrencytypes.forEach(lightmanscurrencytiertype => {
-    lightmanscurrencytiers.forEach(lightmanscurrencytiertier => {
-      events.addJson(`lightmanscurrency:loot_tables/loot_addons/${lightmanscurrencytiertype}/${lightmanscurrencytiertier}`, {
+  lightmanscurrencytypes.forEach(lightmanscurrencytype => {
+    lightmanscurrencytiers.forEach(lightmanscurrencytier => {
+      events.addJson(`lightmanscurrency:loot_tables/loot_addons/${lightmanscurrencytype}/${lightmanscurrencytier}`, {
           type: "minecraft:empty",
           pools: [],
-          random_sequence: `lightmanscurrency:loot_addons/${lightmanscurrencytiertype}/${lightmanscurrencytiertier}`  
+          random_sequence: `lightmanscurrency:loot_addons/${lightmanscurrencytype}/${lightmanscurrencytier}`  
         })
     });
   });
