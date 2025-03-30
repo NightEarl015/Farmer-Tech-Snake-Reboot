@@ -7,7 +7,7 @@
   "cold_desert_enabled": true,
   "coniferous_forest_enabled": true,
   "crag_enabled": true,
-  "crystalline_chasm_enabled": true,
+  "crystalline_chasm_enabled": false,
   "dead_forest_enabled": true,
   "dryland_enabled": true,
   "dune_beach_enabled": true,
