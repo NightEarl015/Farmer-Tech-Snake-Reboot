@@ -8,6 +8,11 @@ ServerEvents.recipes(event => {
   event.remove({output: 'create:andesite_alloy'})
 
   // Rewrited recipes
+  event.replaceOutput(
+    {mod: 'create'}, 
+    'create:honey',            
+    'the_bumblezone:honey_fluid_still'
+  )
 
   // Material
   function andesite_alloy(output, material){

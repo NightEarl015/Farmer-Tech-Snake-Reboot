@@ -32,11 +32,18 @@ ServerEvents.recipes(event => {
       })
   })
 
-    
   event.remove({type: 'thermal:numismatic_fuel'})
+  event.remove({id: 'thermal:machines/centrifuge/centrifuge_honeycomb'})
+  event.remove({id: 'thermal:machines/centrifuge/centrifuge_honey_bottle'})
+  event.remove({id: 'thermal:machines/crucible/crucible_honey_block_to_honey'})
+
 
   // Rewrited recipes
   event.recipes.thermal.numismatic_fuel('kubejs:thermal_coin').energy(64000)
+  event.recipes.thermal.centrifuge(Fluid.of('the_bumblezone:honey_fluid_still', 100), 'minecraft:honeycomb').energy(1000).xp(0.15).id('kubejs:thermal/machines/centrifuge/centrifuge_honeycomb')
+  event.recipes.thermal.centrifuge([Fluid.of('the_bumblezone:honey_fluid_still', 250), 'minecraft:glass_bottle'], 'minecraft:honey_bottle').energy(1000).id('kubejs:thermal/machines/centrifuge/centrifuge_honey_bottle')
+  event.recipes.thermal.crucible(Fluid.of('the_bumblezone:honey_fluid_still', 1000), 'minecraft:honey_block').energy(2000).id('kubejs:thermal/machines/crucible/crucible_honey_block_to_honey')
+  event.recipes.thermal.chiller('minecraft:honey_block', Fluid.of('the_bumblezone:honey_fluid_still', 1000)).energy(2000).id('kubejs:thermal/machines/chiller/chiller_honey_to_honey_block')
 
   /**
    * 

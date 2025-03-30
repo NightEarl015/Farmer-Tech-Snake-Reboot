@@ -37,6 +37,12 @@ ServerEvents.recipes(event => {
                     )
 
                     event.replaceInput(
+                        { id: `lctech:${trader}_interface` }, 
+                        'minecraft:iron_ingot',            
+                        'createutilities:void_steel_ingot'
+                    )
+
+                    event.replaceInput(
                         {}, 
                         'lctech:battery',            
                         'createaddition:modular_accumulator'
