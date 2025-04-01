@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
    * @param {InputItem_} material
    */
   function create_coin_maker(coin, material){
-    event.recipes.create.deploying(coin, ['material', 'thermal:press_coin_die']).keepHeldItem()
+    event.recipes.create.deploying(coin, [material, 'thermal:press_coin_die']).keepHeldItem()
     .id(`kubejs:create/deploying/${material.split("/")[1]}_to_coin`)
   }
   create_coin_maker('kubejs:thermal_coin', '#forge:ingots/copper');

@@ -79,15 +79,16 @@ if (Platform.isLoaded('botanypotstiers')) {
 
         const pottypes1 = [
             'terracotta', 'concrete', 'glazed_terracotta'
-        ]; // Defining types
+        ]; // Defining types1
+
         const pottypes2 = [
             'terracotta_hopper', 'concrete_hopper', 'glazed_terracotta_hopper'
-        ]; // Defining types
+        ]; // Defining types2
 
 
         potcolors.forEach(potcolor => {
-            pottypes1.forEach(pottype1 =>{
-                pottypes2.forEach(pottype2 =>{
+            pottypes1.forEach(pottype1 => {
+                pottypes2.forEach(pottype2 => {
                     // Elite Botany Pot #1(Any Material)
                     event.shaped(`botanypotstiers:elite_${potcolor}_${pottype1}_botany_pot`,
                         [

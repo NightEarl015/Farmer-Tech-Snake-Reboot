@@ -1,7 +1,6 @@
 // FFB Compatible from Biomes O' Plenty
 // Authored by NightEarl015
 
-
 let bopSaplings = [
   {
     "output": {
@@ -20,7 +19,7 @@ let bopSaplings = [
   },
   {
     "output": {
-      "item": "biomesoplenty:yellow_autumn_sapling"
+      "item": "biomesoplenty:yellow_maple_sapling"
     }
   },
   {
