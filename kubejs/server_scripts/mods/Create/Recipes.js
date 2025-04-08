@@ -57,6 +57,21 @@ ServerEvents.recipes(event => {
   event.recipes.create.deploying([Item.of('create:cogwheel').withChance(0.8)], ['create:shaft', 'kubejs:small_wood_gear']).id('kubejs:create/item_application/cogwheel')
   event.recipes.create.deploying([Item.of('create:large_cogwheel').withChance(0.8)], ['create:shaft', 'kubejs:large_wood_gear']).id('kubejs:create/item_application/large_cogwheel')
 
+  event.recipes.createSequencedAssembly(
+    [
+      Item.of('kubejs:uncoded_precision_mechanism').withChance(0.8),
+      Item.of('minecraft:dead_bush').withChance(0.2)
+    ],'alltheores:gold_plate', [
+      event.recipes.createDeploying('kubejs:incomplete_uncoded_precision_mechanism', ['kubejs:incomplete_uncoded_precision_mechanism', 'minecraft:iron_nugget']),
+      event.recipes.createDeploying('kubejs:incomplete_uncoded_precision_mechanism', ['kubejs:incomplete_uncoded_precision_mechanism', 'create:cogwheel']),
+      event.recipes.createDeploying('kubejs:incomplete_uncoded_precision_mechanism', ['kubejs:incomplete_uncoded_precision_mechanism', 'create:large_cogwheel'])
+    ]
+  )
+  .transitionalItem('kubejs:incomplete_uncoded_precision_mechanism')
+  .loops(1)
+  .id('kubejs:create/sequenced_assembly/uncoded_precision_mechanism')
+
+  // Create Coin Maker
   /**
    * 
    * @param {OutputItem_} coin 
@@ -76,4 +91,5 @@ ServerEvents.recipes(event => {
   create_coin_maker('5x kubejs:thermal_coin', '#forge:ingots/lumium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/enderium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/netherite');
+
 })

@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     }
   ).id('kubejs:productivebees/create/mixing/ars_nouveau/honeycomb_arcane')
 
-  modCentrifugeRecipes(event, "productivebees:arcane", [
+  modsCentrifugeRecipes(event, "productivebees:arcane", [
     {item: {tag: "forge:gems/source"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}

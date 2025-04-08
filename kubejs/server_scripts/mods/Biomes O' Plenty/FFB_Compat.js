@@ -19,17 +19,17 @@ let bopSaplings = [
   },
   {
     "output": {
+      "item": "biomesoplenty:red_maple_sapling"
+    }
+  },
+  {
+    "output": {
       "item": "biomesoplenty:yellow_maple_sapling"
     }
   },
   {
     "output": {
-      "item": "biomesoplenty:orange_autumn_sapling"
-    }
-  },
-  {
-    "output": {
-      "item": "biomesoplenty:maple_sapling"
+      "item": "biomesoplenty:orange_maple_sapling"
     }
   },
   {
