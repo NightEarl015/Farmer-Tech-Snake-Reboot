@@ -34,322 +34,323 @@ ServerEvents.recipes(event =>{
 
   // Rewrited recipes
   // A
-  gemsCentrifugeRecipes(event, "productivebees:agate",[
+  customCentrifugeRecipes(event, "productivebees:agate",[
     {item: {tag: "forge:gems/agate"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/agate")
-  gemsCentrifugeRecipes(event, "productivebees:alexandrite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/agate"}}])
+  customCentrifugeRecipes(event, "productivebees:alexandrite",[
     {item: {tag: "forge:gems/alexandrite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/alexandrite")
-  gemsCentrifugeRecipes(event, "productivebees:amber_gem",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/alexandrite"}}])
+  customCentrifugeRecipes(event, "productivebees:amber_gem",[
     {item: {tag: "forge:gems/amber"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/amber")
-  gemsCentrifugeRecipes(event, "productivebees:amethyst",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/amber"}}])
+  customCentrifugeRecipes(event, "productivebees:amethyst",[
     {item: {item: "minecraft:amethyst_shard"}, chance: 30},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "minecraft:amethyst_shard")
-  gemsCentrifugeRecipes(event, "productivebees:ametrine",[
+  ], [])
+  customCentrifugeRecipes(event, "productivebees:ametrine",[
     {item: {tag: "forge:gems/ametrine"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/ametrine")
-  gemsCentrifugeRecipes(event, "productivebees:ammolite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/ametrine"}}])
+  customCentrifugeRecipes(event, "productivebees:ammolite",[
     {item: {tag: "forge:gems/ammolite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/ammolite")
-  gemsCentrifugeRecipes(event, "productivebees:apatite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/ammolite"}}])
+  customCentrifugeRecipes(event, "productivebees:apatite",[
     {item: {tag: "forge:gems/apatite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/apatite")
-  gemsCentrifugeRecipes(event, "productivebees:aquamarine",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/apatite"}}])
+  customCentrifugeRecipes(event, "productivebees:aquamarine",[
     {item: {tag: "forge:gems/aquamarine"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/aquamarine")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/aquamarine"}}])
 
   // B
-  gemsCentrifugeRecipes(event, "productivebees:black_diamond",[
+  customCentrifugeRecipes(event, "productivebees:black_diamond",[
     {item: {tag: "forge:gems/black_diamond"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/black_diamond")
-  gemsCentrifugeRecipes(event, "productivebees:black_opal",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/black_diamond"}}])
+  customCentrifugeRecipes(event, "productivebees:black_opal",[
     {item: {tag: "forge:gems/black_opal"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/black_opal")
-  gemsCentrifugeRecipes(event, "productivebees:benitoite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/black_opal"}}])
+  customCentrifugeRecipes(event, "productivebees:benitoite",[
     {item: {tag: "forge:gems/benitoite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/benitoite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/benitoite"}}])
 
   // C
-  gemsCentrifugeRecipes(event, "productivebees:cats_eye",[
+  customCentrifugeRecipes(event, "productivebees:cats_eye",[
     {item: {tag: "forge:gems/cats_eye"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/cats_eye")
-  gemsCentrifugeRecipes(event, "productivebees:chrysoprase",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/cats_eye"}}])
+  customCentrifugeRecipes(event, "productivebees:chrysoprase",[
     {item: {tag: "forge:gems/chrysoprase"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/chrysoprase")
-  gemsCentrifugeRecipes(event, "productivebees:cinnabar",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/chrysoprase"}}])
+  customCentrifugeRecipes(event, "productivebees:cinnabar",[
     {item: {tag: "forge:gems/cinnabar"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/cinnabar")
-  gemsCentrifugeRecipes(event, "productivebees:citrine",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/cinnabar"}}])
+  customCentrifugeRecipes(event, "productivebees:citrine",[
     {item: {tag: "forge:gems/citrine"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/citrine")
-  gemsCentrifugeRecipes(event, "productivebees:coral",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/citrine"}}])
+  customCentrifugeRecipes(event, "productivebees:coral",[
     {item: {tag: "forge:gems/coral"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/coral")
-  gemsCentrifugeRecipes(event, "productivebees:carnelian",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/coral"}}])
+  customCentrifugeRecipes(event, "productivebees:carnelian",[
     {item: {tag: "forge:gems/carnelian"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/carnelian")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/carnelian"}}])
 
   // D
-  gemsCentrifugeRecipes(event, "productivebees:diamond",[
+  customCentrifugeRecipes(event, "productivebees:diamond",[
     {item: {tag: "forge:gems/diamond"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/diamond")
+  ], [])
 
   // E
-  gemsCentrifugeRecipes(event, "productivebees:emerald",[
+  customCentrifugeRecipes(event, "productivebees:emerald",[
     {item: {tag: "forge:gems/emerald"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/emerald")
-  gemsCentrifugeRecipes(event, "productivebees:euclase",[
+  ], [])
+  customCentrifugeRecipes(event, "productivebees:euclase",[
     {item: {tag: "forge:gems/euclase"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/euclase")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/euclase"}}])
 
   // F
-  gemsCentrifugeRecipes(event, "productivebees:fluorite",[
+  customCentrifugeRecipes(event, "productivebees:fluorite",[
     {item: {tag: "forge:gems/fluorite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/fluorite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/fluorite"}}])
 
   // G
-  gemsCentrifugeRecipes(event, "productivebees:garnet",[
+  customCentrifugeRecipes(event, "productivebees:garnet",[
     {item: {tag: "forge:gems/garnet"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/garnet")
-  gemsCentrifugeRecipes(event, "productivebees:green_sapphire",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/garnet"}}])
+  customCentrifugeRecipes(event, "productivebees:green_sapphire",[
     {item: {tag: "forge:gems/green_sapphire"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/green_sapphire")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/green_sapphire"}}])
 
   // H
-  gemsCentrifugeRecipes(event, "productivebees:heliodor",[
+  customCentrifugeRecipes(event, "productivebees:heliodor",[
     {item: {tag: "forge:gems/heliodor"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/heliodor")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/heliodor"}}])
 
   // I
-  gemsCentrifugeRecipes(event, "productivebees:iolite",[
+  customCentrifugeRecipes(event, "productivebees:iolite",[
     {item: {tag: "forge:gems/iolite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/iolite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/iolite"}}])
 
   // J
-  gemsCentrifugeRecipes(event, "productivebees:jade",[
+  customCentrifugeRecipes(event, "productivebees:jade",[
     {item: {tag: "forge:gems/jade"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/jade")
-  gemsCentrifugeRecipes(event, "productivebees:jasper",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/jade"}}])
+  customCentrifugeRecipes(event, "productivebees:jasper",[
     {item: {tag: "forge:gems/jasper"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/jasper")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/jasper"}}])
 
   // K
-  gemsCentrifugeRecipes(event, "productivebees:kunzite",[
+  customCentrifugeRecipes(event, "productivebees:kunzite",[
     {item: {tag: "forge:gems/kunzite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/kunzite")
-  gemsCentrifugeRecipes(event, "productivebees:kyanite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/kunzite"}}])
+  customCentrifugeRecipes(event, "productivebees:kyanite",[
     {item: {tag: "forge:gems/kyanite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/kyanite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/kyanite"}}])
 
   // L
-  gemsCentrifugeRecipes(event, "productivebees:lapis",[
+  customCentrifugeRecipes(event, "productivebees:lapis",[
     {item: {tag: "forge:gems/lapis"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/lapis")
-  gemsCentrifugeRecipes(event, "productivebees:lepidolite",[
+  ], [])
+  customCentrifugeRecipes(event, "productivebees:lepidolite",[
     {item: {tag: "forge:gems/lepidolite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/lepidolite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/lepidolite"}}])
 
   // M
-  gemsCentrifugeRecipes(event, "productivebees:malachite",[
+  customCentrifugeRecipes(event, "productivebees:malachite",[
     {item: {tag: "forge:gems/malachite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/malachite")
-  gemsCentrifugeRecipes(event, "productivebees:moldavite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/malachite"}}])
+  customCentrifugeRecipes(event, "productivebees:moldavite",[
     {item: {tag: "forge:gems/moldavite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/moldavite")
-  gemsCentrifugeRecipes(event, "productivebees:moonstone",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/moldavite"}}])
+  customCentrifugeRecipes(event, "productivebees:moonstone",[
     {item: {tag: "forge:gems/moonstone"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/moonstone")
-  gemsCentrifugeRecipes(event, "productivebees:morganite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/moonstone"}}])
+  customCentrifugeRecipes(event, "productivebees:morganite",[
     {item: {tag: "forge:gems/morganite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/morganite")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/morganite"}}])
 
   // O
-  gemsCentrifugeRecipes(event, "productivebees:onyx",[
+  customCentrifugeRecipes(event, "productivebees:onyx",[
     {item: {tag: "forge:gems/onyx"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/onyx")
-  gemsCentrifugeRecipes(event, "productivebees:opal",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/onyx"}}])
+  customCentrifugeRecipes(event, "productivebees:opal",[
     {item: {tag: "forge:gems/opal"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/opal")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/opal"}}])
 
   // P
-  gemsCentrifugeRecipes(event, "productivebees:pearl",[
+  customCentrifugeRecipes(event, "productivebees:pearl",[
     {item: {tag: "forge:gems/pearl"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/pearl")
-  gemsCentrifugeRecipes(event, "productivebees:peridot",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/pearl"}}])
+  customCentrifugeRecipes(event, "productivebees:peridot",[
     {item: {tag: "forge:gems/peridot"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/peridot")
-  gemsCentrifugeRecipes(event, "productivebees:phosphophyllite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/peridot"}}])
+  customCentrifugeRecipes(event, "productivebees:phosphophyllite",[
     {item: {tag: "forge:gems/phosphophyllite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/phosphophyllite")
-  gemsCentrifugeRecipes(event, "productivebees:pyrope",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/phosphophyllite"}}])
+  customCentrifugeRecipes(event, "productivebees:pyrope",[
     {item: {tag: "forge:gems/pyrope"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/pyrope")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/pyrope"}}])
 
   // Q
-  gemsCentrifugeRecipes(event, "productivebees:crystalline",[
+  customCentrifugeRecipes(event, "productivebees:crystalline",[
     {item: {tag: "forge:gems/quartz"}, min: 1, max: 3, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/quartz")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/quartz"}}])
 
   // R
   modsCentrifugeRecipes(event, "productivebees:rose_quartz", [
     { item: {item: "create:rose_quartz"}, min: 5, max: 7},
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "create");
-  gemsCentrifugeRecipes(event, "productivebees:ruby",[
+  ], [{type: "forge:mod_loaded", modid: "create"},
+    {type: "productivebees:bee_exists", bee: "productivebees:rose_quartz"}])
+  customCentrifugeRecipes(event, "productivebees:ruby",[
     {item: {tag: "forge:gems/ruby"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/ruby")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/ruby"}}])
 
 
   // S
-  gemsCentrifugeRecipes(event, "productivebees:sapphire",[
+  customCentrifugeRecipes(event, "productivebees:sapphire",[
     {item: {tag: "forge:gems/sapphire"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/sapphire")
-  gemsCentrifugeRecipes(event, "productivebees:sodalite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/sapphire"}}])
+  customCentrifugeRecipes(event, "productivebees:sodalite",[
     {item: {tag: "forge:gems/sodalite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/sodalite")
-  gemsCentrifugeRecipes(event, "productivebees:spinel",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/sodalite"}}])
+  customCentrifugeRecipes(event, "productivebees:spinel",[
     {item: {tag: "forge:gems/spinel"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/spinel")
-  gemsCentrifugeRecipes(event, "productivebees:sunstone",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/spinel"}}])
+  customCentrifugeRecipes(event, "productivebees:sunstone",[
     {item: {tag: "forge:gems/sunstone"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/sunstone")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/sunstone"}}])
 
   // T
-  gemsCentrifugeRecipes(event, "productivebees:tanzanite",[
+  customCentrifugeRecipes(event, "productivebees:tanzanite",[
     {item: {tag: "forge:gems/tanzanite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/tanzanite")
-  gemsCentrifugeRecipes(event, "productivebees:tektite",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/tanzanite"}}])
+  customCentrifugeRecipes(event, "productivebees:tektite",[
     {item: {tag: "forge:gems/tektite"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/tektite")
-  gemsCentrifugeRecipes(event, "productivebees:topaz",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/tektite"}}])
+  customCentrifugeRecipes(event, "productivebees:topaz",[
     {item: {tag: "forge:gems/topaz"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/topaz")
-  gemsCentrifugeRecipes(event, "productivebees:tourmaline",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/topaz"}}])
+  customCentrifugeRecipes(event, "productivebees:tourmaline",[
     {item: {tag: "forge:gems/tourmaline"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/tourmaline")
-  gemsCentrifugeRecipes(event, "productivebees:turquoise",[
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/tourmaline"}}])
+  customCentrifugeRecipes(event, "productivebees:turquoise",[
     {item: {tag: "forge:gems/turquoise"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/turquoise")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/turquoise"}}])
 
   // W
-  gemsCentrifugeRecipes(event, "productivebees:white_diamond",[
+  customCentrifugeRecipes(event, "productivebees:white_diamond",[
     {item: {tag: "forge:gems/white_diamond"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/white_diamond")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/white_diamond"}}])
 
   // Z
-  gemsCentrifugeRecipes(event, "productivebees:zircon",[
+  customCentrifugeRecipes(event, "productivebees:zircon",[
     {item: {tag: "forge:gems/zircon"}, chance: 50},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "forge:gems/zircon")
+  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/zircon"}}])
 
 
 

@@ -5,16 +5,16 @@
     "item": "productivebees:configurable_honeycomb",
     "nbt": {
       "EntityTag": {
-        "type": "productivebees:ender"
+        "type": "productivebees:brown_shroom"
       }
     }
   },
   "outputs": [
     {
       "item": {
-        "item": "minecraft:ender_pearl"
+        "item": "minecraft:brown_mushroom"
       },
-      "chance": 20
+      "chance": 70
     },
     {
       "item": {
@@ -26,15 +26,6 @@
         "fluid": "the_bumblezone:honey_fluid_still"
       },
       "amount": 50
-    }
-  ],
-  "conditions": [
-    {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:mod_loaded",
-        "modid": "integrateddynamics"
-      }
     }
   ]
 }

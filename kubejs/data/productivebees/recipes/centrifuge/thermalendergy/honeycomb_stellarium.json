@@ -5,38 +5,32 @@
     "item": "productivebees:configurable_honeycomb",
     "nbt": {
       "EntityTag": {
-        "type": "productivebees:obsidian"
+        "type": "productivebees:stellarium"
       }
     }
   },
   "outputs": [
     {
       "item": {
-        "tag": "forge:dusts/obsidian"
+        "item": "thermalendergy:stellarium_dust"
       },
-      "min": 1,
-      "max": 5,
-      "chance": 50
-    },
-    {
-      "item": {
-        "tag": "forge:wax"
-      }
+      "chance": 25
     },
     {
       "fluid": {
         "fluid": "the_bumblezone:honey_fluid_still"
       },
-      "amount": 50
+      "amount": 25
     }
   ],
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:dusts/obsidian"
-      }
+      "type": "forge:mod_loaded",
+      "modid": "thermalendergy"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:stellarium"
     }
   ]
 }

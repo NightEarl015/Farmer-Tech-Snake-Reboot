@@ -10,5 +10,5 @@ ServerEvents.recipes(event =>{
     { item: {item: "mysticalagriculture:soulium_dust"}, chance:50},
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], "mysticalagriculture");
+  ], [{type: "forge:mod_loaded", modid: "mysticalagriculture"}])
 })

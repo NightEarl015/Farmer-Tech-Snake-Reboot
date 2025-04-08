@@ -5,14 +5,14 @@
     "item": "productivebees:configurable_honeycomb",
     "nbt": {
       "EntityTag": {
-        "type": "productivebees:experience"
+        "type": "productivebees:refined_obsidian"
       }
     }
   },
   "outputs": [
     {
       "item": {
-        "item": "minecraft:experience_bottle"
+        "tag": "forge:dusts/refined_obsidian"
       },
       "chance": 30
     },
@@ -25,13 +25,20 @@
       "fluid": {
         "fluid": "the_bumblezone:honey_fluid_still"
       },
-      "amount": 0
+      "amount": 50
     }
   ],
   "conditions": [
     {
-      "type": "productivebees:fluid_tag_empty",
-      "tag": "forge:experience"
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:dusts/refined_obsidian"
+      }
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mekanism"
     }
   ]
 }
