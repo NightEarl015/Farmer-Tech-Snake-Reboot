@@ -1,4 +1,4 @@
-// Enderio recipe modifications to Productive Bees
+// Enderio centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event => {
@@ -10,6 +10,7 @@ ServerEvents.recipes(event => {
     'end_steel',
     'dark_steel',
     'energetic_alloy',
+    'infinity',
     'pulsating_alloy',
     'redstone_alloy',
     'soularium',

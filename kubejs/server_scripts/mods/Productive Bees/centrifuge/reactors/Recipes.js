@@ -1,4 +1,4 @@
-// Reactors recipe modifications to Productive Bees
+// Reactors centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{

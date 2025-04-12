@@ -1,4 +1,4 @@
-// Alloys recipe modifications to Productive Bees
+// Alloys centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{

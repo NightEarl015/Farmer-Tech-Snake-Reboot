@@ -1,4 +1,4 @@
-// Powah recipe modifications to Productive Bees
+// Powah centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{

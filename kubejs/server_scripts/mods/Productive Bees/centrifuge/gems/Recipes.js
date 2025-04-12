@@ -1,4 +1,4 @@
-// Gems recipe modifications to Productive Bees
+// Gems centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
@@ -276,7 +276,7 @@ ServerEvents.recipes(event =>{
   ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/quartz"}}])
 
   // R
-  modsCentrifugeRecipes(event, "productivebees:rose_quartz", [
+  customCentrifugeRecipes(event, "productivebees:rose_quartz", [
     { item: {item: "create:rose_quartz"}, min: 5, max: 7},
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}

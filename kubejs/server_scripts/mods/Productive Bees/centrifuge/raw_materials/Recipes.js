@@ -1,4 +1,4 @@
-// Raw materials recipe modifications to Productive Bees
+// Raw materials centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
