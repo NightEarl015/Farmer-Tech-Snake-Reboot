@@ -1,0 +1,18 @@
+{
+  "experimental": {
+    "horizontal_mountain_scale": 0.25,
+    "increased_height": false,
+    "terrain_scale": 1.125
+  },
+  "features": {
+    "deeper_oceans": false,
+    "desert_dunes": true,
+    "lava_rivers": false,
+    "snow_start_offset": 128,
+    "underground_rivers": false
+  },
+  "legacy": {
+    "enabled": false
+  },
+  "mod_enabled": true
+}

@@ -33,13 +33,13 @@ function customCentrifugeRecipes(event, bee, output, condition) {
  * @param { Internal.RecipesEventJS } event 
  * @param { string } bee
  * @param { Array } result
- * @param { string } heatrequirement
+ * @param { Array } heatrequirement
  * @param { Array } condition
  */
 function customMixingCentrifugeRecipes(event, bee, result, heatrequirement, condition) {
   let customMixingCentrifugeRecipe = {
     type: "create:mixing",
-    ingredient: [
+    ingredients: [
       {
         type: "forge:nbt",
         item: "productivebees:configurable_honeycomb",

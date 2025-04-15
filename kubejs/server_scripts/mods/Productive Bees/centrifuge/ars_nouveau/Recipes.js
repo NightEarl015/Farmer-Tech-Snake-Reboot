@@ -7,8 +7,10 @@ ServerEvents.recipes(event => {
 
   // Rewrited recipes
   customCentrifugeRecipes(event, "productivebees:arcane", [
-    {item: {tag: "forge:gems/source"}, chance: 50},
-    {item: {tag: "forge:wax"}},
+    {item: {item: "ars_nouveau:source_gem"}, chance: 0.5},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], [{type: "forge:mod_loaded", modid: "ars_nouveau"}])
+  ], "heated", [
+    {type: "forge:mod_loaded", modid: "create"},
+    {type: "forge:mod_loaded", modid: "ars_nouveau"}
+  ])
 })
