@@ -8,4 +8,9 @@ ServerEvents.recipes(event => {
     'productivebees:honey',            
     'the_bumblezone:honey_fluid_still'
   )
+  event.replaceOutput(
+    {type: 'create:mixing'}, 
+    'productivebees:honey',            
+    'the_bumblezone:honey_fluid_still'
+  )
 })

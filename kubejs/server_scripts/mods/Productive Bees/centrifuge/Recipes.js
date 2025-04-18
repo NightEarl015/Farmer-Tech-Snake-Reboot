@@ -2,8 +2,8 @@
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
-  // Defining vanillaMaterials
-  const vanillaMaterialsToRemove = [
+  // Defining Vanilla Materials
+  const vanillaCentrifugeToRemove = [
     'bone', 
     'draconic',
     'ender',
@@ -23,8 +23,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  vanillaMaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/honeycomb_${MaterialsToRemove}`})
+  vanillaCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/honeycomb_${centrifugeToRemove}`})
   })
 
 

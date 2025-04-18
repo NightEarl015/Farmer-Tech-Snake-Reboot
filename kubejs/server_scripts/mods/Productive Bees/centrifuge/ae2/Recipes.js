@@ -2,16 +2,16 @@
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
-  // Defining ae2Materials
-  const ae2MaterialsToRemove = [
+  // Defining AE2 Materials
+  const ae2CentrifugeToRemove = [
     'fluix', 
     'sky_steel',
     'spacial'
   ]; 
 
   // Removed recipes
-  ae2MaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/ae2/honeycomb_${MaterialsToRemove}`})
+  ae2CentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/ae2/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

@@ -1,4 +1,4 @@
-// Thermal Mixing centrifuge recipe modifications to Productive Bees
+// Ars Nouveau Mixing centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event => {

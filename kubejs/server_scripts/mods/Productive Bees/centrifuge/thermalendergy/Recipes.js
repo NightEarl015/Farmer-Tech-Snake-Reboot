@@ -3,15 +3,15 @@
 
 ServerEvents.recipes(event =>{
   // Defining thermalendergyMaterials
-  const thermalendergyMaterialsToRemove = [
+  const thermalendergyCentrifugeToRemove = [
     'melodium',
     'prismalium',
     'stellarium'
   ];
 
   // Removed recipes
-  thermalendergyMaterialsToRemove.forEach(MaterialToRemove =>{
-    event.remove({id: `productivebees:centrifuge/thermalendergy/honeycomb_${MaterialToRemove}`})
+  thermalendergyCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/thermalendergy/honeycomb_${centrifugeToRemove}`})
   })
 
   customCentrifugeRecipes(event, "productivebees:melodium", [

@@ -2,9 +2,8 @@
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event => {
-
   // Defining enderioMaterials
-  const enderioMaterialsToRemove = [
+  const enderioCentrifugeToRemove = [
     'conductive_alloy', 
     'copper_alloy',
     'end_steel',
@@ -18,8 +17,8 @@ ServerEvents.recipes(event => {
   ]; 
 
   // Removed recipes
-  enderioMaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/enderio/honeycomb_${MaterialsToRemove}`})
+  enderioCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/enderio/honeycomb_${centrifugeToRemove}`})
   })
   
 

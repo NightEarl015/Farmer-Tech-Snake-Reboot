@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     ],
     {
       E: 'mysticalagriculture:certus_quartz_essence',
-      C: 'bigreactors:energycore'
+      I: 'bigreactors:energycore'
     }
   ).id('kubejs:appflux/energy_processor_press')
 

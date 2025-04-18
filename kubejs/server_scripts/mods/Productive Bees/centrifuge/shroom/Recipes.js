@@ -3,7 +3,7 @@
 
 ServerEvents.recipes(event =>{
   // Defining shrooms
-  const shroomsToRemove = [
+  const shroomsCentrifugeToRemove = [
     'brown_shroom',
     'crimson',
     'red_shroom',
@@ -11,8 +11,8 @@ ServerEvents.recipes(event =>{
   ];
 
   // Removed recipes
-  shroomsToRemove.forEach(shroomToRemove =>{
-    event.remove({id: `productivebees:centrifuge/shroom/honeycomb_${shroomToRemove}`})
+  shroomsCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/shroom/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

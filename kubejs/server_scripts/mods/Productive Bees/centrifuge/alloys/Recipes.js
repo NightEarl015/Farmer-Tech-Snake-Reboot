@@ -3,7 +3,7 @@
 
 ServerEvents.recipes(event =>{
   // Defining Productive Bees alloys
-  const pballoysToRemove = [
+  const alloysCentrifugeToRemove = [
     'brass', 
     'bronze',
     'constantan',
@@ -17,8 +17,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  pballoysToRemove.forEach(alloysToRemove =>{
-    event.remove({id: `productivebees:centrifuge/alloys/honeycomb_${alloysToRemove}`})
+  alloysCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/alloys/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

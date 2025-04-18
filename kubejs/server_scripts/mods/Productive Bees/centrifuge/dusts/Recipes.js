@@ -3,7 +3,7 @@
 
 ServerEvents.recipes(event =>{
   // Defining dusts
-  const dustsToRemove = [
+  const dustsCentrifugeToRemove = [
     'blazing',
     'glowing',
     'niter',
@@ -14,8 +14,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  dustsToRemove.forEach(dustToRemove =>{
-    event.remove({id: `productivebees:centrifuge/dusts/honeycomb_${dustToRemove}`})
+  dustsCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/dusts/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

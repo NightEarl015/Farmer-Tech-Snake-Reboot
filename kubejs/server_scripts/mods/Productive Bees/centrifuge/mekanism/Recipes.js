@@ -2,15 +2,15 @@
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
-  // Defining mekanismMaterials
-  const mekanismMaterialsToRemove = [
+  // Defining Mekanism Materials
+  const mekanismCentrifugeToRemove = [
     'refined_glowstone', 
     'refined_obsidian'
   ]; 
 
   // Removed recipes
-  mekanismMaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/mekanism/honeycomb_${MaterialsToRemove}`})
+  mekanismCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/mekanism/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

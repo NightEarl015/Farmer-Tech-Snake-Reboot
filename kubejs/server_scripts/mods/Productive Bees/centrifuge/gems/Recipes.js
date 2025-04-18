@@ -3,7 +3,7 @@
 
 ServerEvents.recipes(event =>{
   // Defining Productive Bees gems
-  const pbgemsToRemove = [
+  const gemsCentrifugeToRemove = [
     'agate', 'alexandrite', 'amber_gem', 'amethyst', 'ametrine', 'ammolite', 'apatite', 'aquamarine',
     'benitoite', 'black_diamond', 'black_opal',
     'carnelian', 'cats_eye', 'chrysoprase', 'cinnabar', 'cinnabar_dust', 'citrine', 'coral',
@@ -28,8 +28,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  pbgemsToRemove.forEach(gemsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/gems/honeycomb_${gemsToRemove}`})
+  gemsCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/gems/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes

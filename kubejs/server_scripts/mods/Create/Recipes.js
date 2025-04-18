@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
   event.remove({output: 'create:cogwheel'})
   event.remove({output: 'create:large_cogwheel'})
   event.remove({output: 'create:andesite_alloy'})
+  event.remove({id: 'create:mixing/honey'})
 
   // Rewrited recipes
   event.replaceOutput(
@@ -13,45 +14,57 @@ ServerEvents.recipes(event => {
     'create:honey',            
     'the_bumblezone:honey_fluid_still'
   )
+  // Mixing
+  event.recipes.create.mixing([Fluid.of('the_bumblezone:honey_fluid_still', 1000)], 'minecraft:honey_block').heated()
 
-  // Material
-  function andesite_alloy(output, material){
-      event.shaped(output, [
-          'MAM',
-          'AMA',
-          'MAM'
+  // Materials
+  event.shaped('create:andesite_alloy', 
+    [
+      'MAM',
+      'AMA',
+      'MAM'
+    ],
+    {
+      A: 'minecraft:andesite',
+      M: 'minecraft:iron_nugget'
+    }
+  ).id('kubejs:create/crafting/materials/andesite_alloy')
 
-      ], {
-          A: 'minecraft:andesite',
-          M: material
-      })
-  }
-  andesite_alloy("create:andesite_alloy", 'minecraft:iron_nugget')/*.id('kubejs:create/materials/andesite_alloy')*/
-  andesite_alloy("create:andesite_alloy", 'alltheores:zinc_nugget')/*.id('kubejs:create/materials/andesite_alloy_from_zinc')*/
+  event.shaped('create:andesite_alloy', 
+    [
+      'MAM',
+      'AMA',
+      'MAM'
+    ],
+    {
+      A: 'minecraft:andesite',
+      M: 'alltheores:zinc_nugget'
+    }
+  ).id('kubejs:create/crafting/materials/andesite_alloy_from_zinc')
 
-  //Tier 1
+  // Tier 1
   event.shaped('create:cogwheel', 
-      [
-        'G',
-        'S', 
-        'G'
-      ],
-      {
-        S: 'create:shaft',
-        G: 'kubejs:small_wood_gear'
-      }
+    [
+      'G',
+      'S', 
+      'G'
+    ],
+    {
+      S: 'create:shaft',
+      G: 'kubejs:small_wood_gear'
+    }
   ).id('kubejs:create/crafting/kinetics/cogwheel')
 
   event.shaped('create:large_cogwheel',
-      [
-        'G',
-        'S', 
-        'G'
-      ],
-      {
-        S: 'create:shaft',
-        G: 'kubejs:large_wood_gear'
-      }
+    [
+      'G',
+      'S', 
+      'G'
+    ],
+    {
+      S: 'create:shaft',
+      G: 'kubejs:large_wood_gear'
+    }
   ).id('kubejs:create/crafting/kinetics/large_cogwheel')
   
   event.recipes.create.deploying([Item.of('create:cogwheel').withChance(0.8)], ['create:shaft', 'kubejs:small_wood_gear']).id('kubejs:create/item_application/cogwheel')
@@ -86,10 +99,10 @@ ServerEvents.recipes(event => {
   create_coin_maker('kubejs:thermal_coin', '#forge:ingots/melodium');
   create_coin_maker('2x kubejs:thermal_coin', '#forge:ingots/iron');
   create_coin_maker('2x kubejs:thermal_coin', '#forge:ingots/stellarium');
+  create_coin_maker('3x kubejs:thermal_coin', '#forge:ingots/tin');
   create_coin_maker('4x kubejs:thermal_coin', '#forge:ingots/signalum');
   create_coin_maker('4x kubejs:thermal_coin', '#forge:ingots/gold');
   create_coin_maker('5x kubejs:thermal_coin', '#forge:ingots/lumium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/enderium');
   create_coin_maker('10x kubejs:thermal_coin', '#forge:ingots/netherite');
-
 })
