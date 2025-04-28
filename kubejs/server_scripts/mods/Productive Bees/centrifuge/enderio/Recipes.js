@@ -1,15 +1,15 @@
-// Enderio recipe modifications to Productive Bees
+// Enderio centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event => {
-
   // Defining enderioMaterials
-  const enderioMaterialsToRemove = [
+  const enderioCentrifugeToRemove = [
     'conductive_alloy', 
     'copper_alloy',
     'end_steel',
     'dark_steel',
     'energetic_alloy',
+    'infinity',
     'pulsating_alloy',
     'redstone_alloy',
     'soularium',
@@ -17,8 +17,8 @@ ServerEvents.recipes(event => {
   ]; 
 
   // Removed recipes
-  enderioMaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/enderio/honeycomb_${MaterialsToRemove}`})
+  enderioCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/enderio/honeycomb_${centrifugeToRemove}`})
   })
   
 

@@ -1,9 +1,9 @@
-// Reactors recipe modifications to Productive Bees
+// Reactors centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
   // Defining Productive Bees reactors
-  const reactorsToRemove = [
+  const reactorsCentrifugeToRemove = [
     'blutonium', 
     'cyanite',
     'graphite',
@@ -15,11 +15,17 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  reactorsToRemove.forEach(reactorsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/reactors/honeycomb_${reactorsToRemove}`})
+  reactorsCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/reactors/honeycomb_${centrifugeToRemove}`})
   })
 
   // Rewrited recipes
+  customCentrifugeRecipes(event, "productivebees:anglesite", [
+    {item: {tag: "forge:wax"}},
+    {item: {item: "bigreactors:anglesite_crystal"}},
+    {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
+  ], [{type: "productivebees:bee_exists", bee: "productivebees:blutonium"},
+    {type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:gems/anglesite"}}]);
   customCentrifugeRecipes(event, "productivebees:blutonium", [
     {item: {tag: "forge:wax"}},
     {item: {tag: "forge:ingots/blutonium"}},

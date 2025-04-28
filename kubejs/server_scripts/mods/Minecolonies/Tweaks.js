@@ -1,5 +1,7 @@
 // priority: 100
 
+/*
+
 // All tweaks to Minecolonies
 // Tweaked by NightEarl015
 
@@ -144,6 +146,7 @@ ServerEvents.lowPriorityData(event => {
     })
   })
 })
+*/
 
 
 

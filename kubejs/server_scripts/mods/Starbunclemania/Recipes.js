@@ -1,8 +1,10 @@
 // All recipe modifications to Starbunclemania
 // Modified by NightEarl015
 ServerEvents.recipes(event => {
+
   // Removed Recipes
   event.remove({id: 'starbunclemania:fluid/create_honey_to_source'})
+  
   // Rewrited Recipes
   event.custom({
     conditions: [

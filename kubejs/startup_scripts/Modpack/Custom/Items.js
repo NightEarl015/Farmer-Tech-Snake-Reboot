@@ -3,11 +3,6 @@
 
 StartupEvents.registry("item", event=>{
 
-  event.create('copper_coin')
-  .displayName('Copper Coin')
-  .maxStackSize(64)
-  .tag('fts:copper_coin')
-
   event.create('industrial_salt')
   .displayName('Industrial Salt')
   .maxStackSize(64)
@@ -68,8 +63,25 @@ StartupEvents.registry("item", event=>{
 
   event.create('uncoded_precision_mechanism')
   .displayName('Uncoded Precision Mechanism')
+  .maxStackSize(64)
 
   event.create('incomplete_uncoded_precision_mechanism')
   .displayName('Incomplete Uncoded Precision Mechanism')
+
+  event.create('incomplete_printed_energy_processor')
+  .displayName('Incomplete Printed Energy Circuit')
+  event.create('incomplete_energy_processor')
+  .displayName('Incomplete Energy Processor')
+
+  event.create('incomplete_printed_accumulation_processor')
+  .displayName('Incomplete Printed Accumulation Processor')
+  event.create('incomplete_accumulation_processor')
+  .displayName('Incomplete Accumulation Processor')
+
+
+  event.create('incomplete_printed_quantum_processor')
+  .displayName('Incomplete Printed Quantum Processor')
+  event.create('incomplete_quantum_processor')
+  .displayName('Incomplete Quantum Processor')
 
 })

@@ -1,13 +1,12 @@
-// Centrifuge recipe modifications to Productive Bees
+// Vanilla centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
-  // Defining vanillaMaterials
-  const vanillaMaterialsToRemove = [
+  // Defining Vanilla Materials
+  const vanillaCentrifugeToRemove = [
     'bone', 
     'draconic',
     'ender',
-    'ender_integrateddynamics',
     'experience',
     'experience_fluid',
     'fossilised',
@@ -15,7 +14,7 @@ ServerEvents.recipes(event =>{
     'ghostly',
     'magmatic',
     'obsantian',
-    'obsantian_dust',
+    'powdery',
     'sculk',
     'silky',
     'slimy',
@@ -24,8 +23,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  vanillaMaterialsToRemove.forEach(MaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/honeycomb_${MaterialsToRemove}`})
+  vanillaCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/honeycomb_${centrifugeToRemove}`})
   })
 
 
@@ -40,12 +39,7 @@ ServerEvents.recipes(event =>{
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
   ], [{type: "productivebees:bee_exists", bee: "productivebees:draconic"}]);
-  modsCentrifugeRecipes(event, "productivebees:ender", [
-    { item: {item: "minecraft:ender_pearl"}, chance: 20},
-    { item: {tag: "forge:wax"}},
-    { fluid: {fluid: "integrateddynamics:liquid_chorus"}, amount: 50}
-  ], [{type: "forge:not", value: {type: "forge:mod_loaded", modid: "integrateddynamics"}}]);
-  modsCentrifugeRecipes(event, "productivebees:ender", [
+  customCentrifugeRecipes(event, "productivebees:ender", [
     { item: {item: "minecraft:ender_pearl"}, chance: 20},
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "integrateddynamics:liquid_chorus"}, amount: 50}
@@ -60,11 +54,6 @@ ServerEvents.recipes(event =>{
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 0}
   ], [{type: "productivebees:fluid_tag_empty", tag: "forge:experience"}]);
-  customCentrifugeRecipes(event, "productivebees:experience", [
-    { item: {tag: "forge:wax"}},
-    { fluid: {fluid: "forge:experience"}, amount: 100}
-  ], [{type: "forge:not", value: {type: "productivebees:fluid_tag_empty", tag: "forge:experience"}}]);
-
   customCentrifugeRecipes(event, "productivebees:frosty", [
     { item: {item: "minecraft:snowball"}, min: 2, max: 4},
     { item: {item: "minecraft:ice"}, chance: 40},
@@ -85,11 +74,11 @@ ServerEvents.recipes(event =>{
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
   ], [{type: "forge:tag_empty", tag: "forge:dusts/obsidian"}]);
-  customCentrifugeRecipes(event, "productivebees:obsidian", [
-    { item: {tag: "forge:dusts/obsidian"}, min: 1, max: 5, chance: 50},
+  customCentrifugeRecipes(event, "productivebees:powdery", [
+    { item: {item: "minecraft:gunpowder"}, chance: 50},
     { item: {tag: "forge:wax"}},
     { fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
-  ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:dusts/obsidian"}}]);
+  ], []);
   customCentrifugeRecipes(event, "productivebees:sculk", [
     { item: {item: "minecraft:echo_shard"}, chance: 30},
     { item: {tag: "forge:wax"}},

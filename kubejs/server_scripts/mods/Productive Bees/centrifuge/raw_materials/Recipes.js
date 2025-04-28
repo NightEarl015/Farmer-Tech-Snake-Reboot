@@ -1,9 +1,9 @@
-// Raw materials recipe modifications to Productive Bees
+// Raw materials centrifuge recipe modifications to Productive Bees
 // Modified by NightEarl015 
 
 ServerEvents.recipes(event =>{
   // Defining Productive Bees raw materials
-  const pbrawmaterialsToRemove = [
+  const rawmaterialsCentrifugeToRemove = [
     'aluminium', 
     'bismuth',
     'copper',
@@ -24,8 +24,8 @@ ServerEvents.recipes(event =>{
   ]; 
 
   // Removed recipes
-  pbrawmaterialsToRemove.forEach(rawmaterialsToRemove =>{
-    event.remove({id: `productivebees:centrifuge/raw_materials/honeycomb_${rawmaterialsToRemove}`})
+  rawmaterialsCentrifugeToRemove.forEach(centrifugeToRemove =>{
+    event.remove({id: `productivebees:centrifuge/raw_materials/honeycomb_${centrifugeToRemove}`})
   })
   
   // Rewrited recipes
@@ -45,7 +45,7 @@ ServerEvents.recipes(event =>{
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
   ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:raw_materials/copper"}}])
   customCentrifugeRecipes(event, "productivebees:gold", [
-    {item: {tag: "#forge:raw_materials/gold"}, chance: 40},
+    {item: {tag: "forge:raw_materials/gold"}, chance: 40},
     {item: {tag: "forge:wax"}},
     {fluid: {fluid: "the_bumblezone:honey_fluid_still"}, amount: 50}
   ], [{type: "forge:not", value: {type: "forge:tag_empty", tag: "forge:raw_materials/gold"}}])

@@ -16,4 +16,11 @@ ServerEvents.recipes(event => {
       M: 'ad_astra:mars_stone'
     }
   ).id('kubejs:appliedenergistics2/sky_stone')
+
+  event.shapeless('ae2:fluix_dust',
+    [
+      "#alltheores:ore_hammers",
+      'ae2:fluix_crystal'
+    ],
+  ).id('appliedenergistics2:fluix_dust')
 })

@@ -2,14 +2,14 @@
 // Modified by NightEarl015
 
 ServerEvents.recipes(event => {
-    const modnames = [
-        'createfood', 'braziliandelight'
-    ]; // Defining modnames
-    modnames.forEach(modname => {
-        event.replaceInput(
-            { mod: `${modname}` }, 
-            '#forge:salt',            
-            'salt:salt'         
-        )
-    });    
+  const modnames = [
+    'createfood', 'braziliandelight'
+  ]; // Defining modnames
+  modnames.forEach(modname => {
+    event.replaceInput(
+      { mod: `${modname}` }, 
+      '#forge:salt',            
+      'salt:salt'         
+    )
+  });    
 })

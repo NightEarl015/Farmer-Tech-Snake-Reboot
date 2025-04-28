@@ -1,0 +1,17 @@
+{
+    "type":"immersiveengineering:bottling_machine",
+    "fluid":{
+        "amount":250,
+        "tag":"minecraft:water"
+    },
+    "inputs":[
+        {
+            "item":"create:wheat_flour"
+        }
+    ],
+    "results":[
+        {
+            "item":"farmersdelight:wheat_dough"
+        }
+    ]
+}
