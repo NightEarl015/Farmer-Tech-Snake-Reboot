@@ -4,7 +4,7 @@
     "name": "Bone Meal",
     "enabledByDefault": true,
     "defaultPayment": {
-      "item": "kubejs:copper_coin"
+      "item": "alexis_64_coins:copper_coin"
     },
     "defaultCategory": "farmingforblockheads:other"
   },

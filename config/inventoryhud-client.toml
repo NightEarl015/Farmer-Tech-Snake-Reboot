@@ -101,7 +101,7 @@
 	armHalign = "LEFT"
 	#Armor HUD position (X)
 	#Range: -9999 ~ 9999
-	xArmPos = 100
+	xArmPos = 203
 	#Armor HUD position (Y)
 	#Range: -9999 ~ 9999
 	yArmPos = 70
@@ -217,7 +217,7 @@
 #Notification settings
 [notification]
 	#Last notified mod version
-	lastNotifiedVersion = "1.15.19"
+	lastNotifiedVersion = "1.20.1-10.2.0-183"
 	#Notify more than once
 	keepNotifying = true
 

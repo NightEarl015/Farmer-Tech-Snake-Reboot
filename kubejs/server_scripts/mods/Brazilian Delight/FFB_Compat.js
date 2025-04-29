@@ -59,7 +59,7 @@ ServerEvents.highPriorityData(events => {
       name: "Brazilian Delight Seeds",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:seeds"
     },
@@ -71,7 +71,7 @@ ServerEvents.highPriorityData(events => {
       name: "Brazilian Delight Saplings",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:saplings"
     },

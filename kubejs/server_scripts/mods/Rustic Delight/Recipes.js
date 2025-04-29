@@ -3,6 +3,7 @@
 ServerEvents.recipes(event => {
   // Removed recipes
   event.remove({id: 'rusticdelight:brewing/coffee'})
+  event.remove({id: 'rusticdelight:coffee'})
 
   // Rewrited recipes
   event.shapeless('rusticdelight:bell_pepper_seeds',
@@ -20,6 +21,12 @@ ServerEvents.recipes(event => {
     {mod: 'rusticdelight'}, 
     'rusticdelight:roasted_coffee_beans',
     'createcafe:roasted_coffee_beans'
+  )
+
+  event.replaceInput(
+    {mod: 'rusticdelight'}, 
+    'rusticdelight:coffee',
+    'farmersrespite:coffee'
   )
 
   event.replaceOutput(

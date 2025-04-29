@@ -3,6 +3,11 @@
 
 StartupEvents.registry("item", event=>{
 
+  event.create('copper_coin')
+  .displayName('Copper Coin')
+  .maxStackSize(64)
+  .tag('fts:copper_coin')
+
   event.create('industrial_salt')
   .displayName('Industrial Salt')
   .maxStackSize(64)

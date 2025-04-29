@@ -74,21 +74,21 @@ let vanillaSaplings = [
   {
     "output": "minecraft:azalea",
     "payment": {
-      "item": "kubejs:copper_coin",
+      "item": "alexis_64_coins:copper_coin",
       "count": 4
     }
   },
   {
     "output": "minecraft:flowering_azalea",
     "payment": {
-      "item": "kubejs:copper_coin",
+      "item": "alexis_64_coins:copper_coin",
       "count": 4
     }
   },
   {
     "output": "minecraft:mangrove_propagule",
     "payment": {
-      "item": "kubejs:copper_coin",
+      "item": "alexis_64_coins:copper_coin",
       "count": 4
     }
   }
@@ -140,7 +140,7 @@ ServerEvents.lowPriorityData(events => {
       name: "Vanilla Seeds",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:seeds"
     },
@@ -152,7 +152,7 @@ ServerEvents.lowPriorityData(events => {
       name: "Vanilla Saplings",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:saplings"
     },
@@ -164,7 +164,7 @@ ServerEvents.lowPriorityData(events => {
       name: "Vanilla Flowers",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:flowers"
     },

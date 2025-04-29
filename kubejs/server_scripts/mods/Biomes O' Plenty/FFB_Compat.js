@@ -164,7 +164,7 @@ ServerEvents.highPriorityData(events => {
       name: "BiomesOPlenty Saplings",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:saplings"
     },
@@ -176,7 +176,7 @@ ServerEvents.highPriorityData(events => {
       name: "BiomesOPlenty Flowers",
       enabledByDefault: true,
       defaultPayment: {
-        item: "kubejs:copper_coin"
+        item: "alexis_64_coins:copper_coin"
       },
       defaultCategory: "farmingforblockheads:flowers"
     },
