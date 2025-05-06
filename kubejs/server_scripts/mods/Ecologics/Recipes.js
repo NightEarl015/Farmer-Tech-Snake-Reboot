@@ -16,5 +16,5 @@ ServerEvents.recipes(event => {
     0.35, 
     10, 
     "braziliandelight:coconut_slice", 
-  ).id('kubejs:ecologics/tropical_stew')
+  ).id('ecologics:tropical_stew')
 })

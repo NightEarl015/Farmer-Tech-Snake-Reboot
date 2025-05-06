@@ -45,11 +45,6 @@ ServerEvents.recipes(event => {
   event.recipes.thermal.crucible(Fluid.of('the_bumblezone:honey_fluid_still', 1000), 'minecraft:honey_block').energy(2000).id('kubejs:thermal/machines/crucible/crucible_honey_block_to_honey')
   event.recipes.thermal.chiller('minecraft:honey_block', Fluid.of('the_bumblezone:honey_fluid_still', 1000)).energy(2000).id('kubejs:thermal/machines/chiller/chiller_honey_to_honey_block')
 
-  /**
-   * 
-   * @param {OutputItem_} coin 
-   * @param {InputItem_} material
-   */
   function thermal_coin_maker(coin, material) {
     event.recipes.thermal.press(coin, [material, 'thermal:press_coin_die'])
     .energy(1600)

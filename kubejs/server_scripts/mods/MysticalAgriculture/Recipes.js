@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
             P: 'mysticalagriculture:prosperity_shard',
             G: 'rftoolsbase:infused_diamond'
         }
-    ).id('kubejs:mysticalagriculture/infusion_crystal')
+    ).id('mysticalagriculture:infusion_crystal')
 
 
     // Master Infusion Crystal
@@ -63,7 +63,7 @@ ServerEvents.recipes(event => {
             P: 'mysticalagriculture:prosperity_shard',
             C: 'mysticalagriculture:infusion_crystal'
         }
-    ).id('kubejs:mysticalagriculture/master_infusion_crystal')
+    ).id('mysticalagriculture:master_infusion_crystal')
     
 
     // Mystical Fertilizer
@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
             P: 'mysticalagriculture:prosperity_shard',
 
         }
-    ).id('kubejs:mysticalagriculture/mystical_fertilizer')
+    ).id('mysticalagriculture:mystical_fertilizer')
       
 
     // Mystical Agriculture Guide
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
             'mysticalagriculture:inferium_essence',
             'minecraft:book'
         ],
-    ).id('kubejs:mysticalagriculture/guide')
+    ).id('mysticalagriculture:guide')
   
 
     //Prudentium Essence Uncraft
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
         [
         'mysticalagriculture:prudentium_essence'
         ]
-    ).id('kubejs:mysticalagriculture/prudentium_essence_uncraft')
+    ).id('mysticalagriculture:prudentium_essence_uncraft')
 
 
     //Insanium Essence Uncraft
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         [
         'mysticalagradditions:insanium_essence'
         ]
-    ).id('kubejs:mysticalagriculture/insanium_essence_uncraft')
+    ).id('mysticalagriculture:insanium_essence_uncraft')
 
     // Infusion Pedestal 
     event.replaceInput(
@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
 
     // Similar recipes
     // Essence Conversion
-    function infusion(highessence, lowessence){
+    function essenceinfusion(highessence, lowessence){
         event.shaped(highessence, [
             'OOO',
             'OIO',
@@ -135,16 +135,16 @@ ServerEvents.recipes(event => {
         ], {
             I: 'mysticalagriculture:infusion_crystal',
             O: lowessence
-        }).id(`kubejs:mysticalagriculture/${highessence.split(":")[1]}`)
+        }).id(`mysticalagriculture:${highessence.split(":")[1]}`)
     }
-    infusion('mysticalagriculture:prudentium_essence', 'mysticalagriculture:inferium_essence')
-    infusion('mysticalagriculture:tertium_essence', 'mysticalagriculture:prudentium_essence')
-    infusion('mysticalagriculture:imperium_essence', 'mysticalagriculture:tertium_essence')
-    infusion('mysticalagriculture:supremium_essence', 'mysticalagriculture:supremium_essence')
-    infusion('mysticalagradditions:insanium_essence', 'mysticalagriculture:imperium_essence')
+    essenceinfusion('mysticalagriculture:prudentium_essence', 'mysticalagriculture:inferium_essence')
+    essenceinfusion('mysticalagriculture:tertium_essence', 'mysticalagriculture:prudentium_essence')
+    essenceinfusion('mysticalagriculture:imperium_essence', 'mysticalagriculture:tertium_essence')
+    essenceinfusion('mysticalagriculture:supremium_essence', 'mysticalagriculture:supremium_essence')
+    essenceinfusion('mysticalagradditions:insanium_essence', 'mysticalagriculture:imperium_essence')
 
     // Farmland of Essence
-    function farmland(essencefarmland, essence){
+    function essencefarmland(essencefarmland, essence){
         event.shaped(essencefarmland, [
             'OOO',
             'OIO',
@@ -152,29 +152,29 @@ ServerEvents.recipes(event => {
         ], {
             I: 'minecraft:farmland',
             O: essence
-        }).id(`kubejs:mysticalagriculture/${essencefarmland.split(":")[1]}`)
+        }).id(`mysticalagriculture:${essencefarmland.split(":")[1]}`)
     }
-    farmland('mysticalagriculture:inferium_farmland', 'mysticalagriculture:inferium_essence')
-    farmland('mysticalagriculture:prudentium_farmland', 'mysticalagriculture:prudentium_essence')
-    farmland('mysticalagriculture:tertium_farmland', 'mysticalagriculture:tertium_essence')
-    farmland('mysticalagriculture:supremium_farmland', 'mysticalagriculture:supremium_essence')
-    farmland('mysticalagradditions:insanium_farmland', 'mysticalagradditions:insanium_essence')
+    essencefarmland('mysticalagriculture:inferium_farmland', 'mysticalagriculture:inferium_essence')
+    essencefarmland('mysticalagriculture:prudentium_farmland', 'mysticalagriculture:prudentium_essence')
+    essencefarmland('mysticalagriculture:tertium_farmland', 'mysticalagriculture:tertium_essence')
+    essencefarmland('mysticalagriculture:supremium_farmland', 'mysticalagriculture:supremium_essence')
+    essencefarmland('mysticalagradditions:insanium_farmland', 'mysticalagradditions:insanium_essence')
 
     // Block of Essence
-    function block(essenceblock, essence){
+    function essenceblock(essenceblock, essence){
         event.shaped(essenceblock, [
             'OOO',
             'OOO',
             'OOO'
         ], {
             O: essence
-        }).id(`kubejs:mysticalagriculture/${essenceblock.split(":")[1]}`)
+        }).id(`mysticalagriculture:${essenceblock.split(":")[1]}`)
     }
-    block('mysticalagriculture:inferium_block', 'mysticalagriculture:inferium_essence')
-    block('mysticalagriculture:prudentium_block', 'mysticalagriculture:prudentium_essence')
-    block('mysticalagriculture:tertium_block', 'mysticalagriculture:tertium_essence')
-    block('mysticalagriculture:supremium_block', 'mysticalagriculture:supremium_essence')
-    block('mysticalagradditions:insanium_block', 'mysticalagradditions:insanium_essence')
+    essenceblock('mysticalagriculture:inferium_block', 'mysticalagriculture:inferium_essence')
+    essenceblock('mysticalagriculture:prudentium_block', 'mysticalagriculture:prudentium_essence')
+    essenceblock('mysticalagriculture:tertium_block', 'mysticalagriculture:tertium_essence')
+    essenceblock('mysticalagriculture:supremium_block', 'mysticalagriculture:supremium_essence')
+    essenceblock('mysticalagradditions:insanium_block', 'mysticalagradditions:insanium_essence')
 
     // Essence Polymerization #1
     function poly1(output, essence){
@@ -182,7 +182,7 @@ ServerEvents.recipes(event => {
             'OOO'
         ], {
             O: essence
-        }).id(`kubejs:mysticalagriculture/poly1/${output.split(":")[1]}`)
+        }).id(`mysticalagriculture:poly1/${output.split(":")[1]}`)
     }
     poly1("2x #forge:silicon", 'mysticalagriculture:silicon_essence')
     poly1("3x #forge:dusts/sulfur", 'mysticalagriculture:sulfur_essence')
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
             'OOO'
         ], {
             O: essence
-        }).id(`kubejs:mysticalagriculture/poly2/${output.split(":")[1]}`)
+        }).id(`mysticalagriculture:poly2/${output.split(":")[1]}`)
     }
     poly2('3x ae2:certus_quartz_crystal', 'mysticalagriculture:certus_quartz_essence')
     poly2('3x ae2:fluix_crystal', 'mysticalagriculture:fluix_essence')

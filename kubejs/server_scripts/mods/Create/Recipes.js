@@ -85,11 +85,6 @@ ServerEvents.recipes(event => {
   .id('kubejs:create/sequenced_assembly/uncoded_precision_mechanism')
 
   // Create Coin Maker
-  /**
-   * 
-   * @param {OutputItem_} coin 
-   * @param {InputItem_} material
-   */
   function create_coin_maker(coin, material){
     event.recipes.create.deploying(coin, [material, 'thermal:press_coin_die']).keepHeldItem()
     .id(`kubejs:create/deploying/${material.split("/")[1]}_to_coin`)
