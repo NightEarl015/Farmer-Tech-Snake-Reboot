@@ -1,0 +1,13 @@
+[
+    {
+        "dimension": "minecraft:the_end",
+        "mob": "minecraft:ender_dragon",
+        "customname":"Ender Trigon",
+        "hostile": true,
+        "when": "onjoin",
+        "healthadd": 800,
+        "damageadd": 30,
+        "armoradd": 200,
+        "result": "allow"
+      }
+]

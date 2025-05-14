@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
       E: 'mysticalagriculture:certus_quartz_essence',
       I: 'bigreactors:energycore'
     }
-  ).id('kubejs:appflux/energy_processor_press')
+  ).id('appflux:energy_processor_press')
 
   event.recipes.createSequencedAssembly(
     [
@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
   )
   .transitionalItem('kubejs:incomplete_printed_energy_processor')
   .loops(1)
-  .id('kubejs:appflux/create/sequenced_assembly/printed_energy_processor');
+  .id('appflux:create/sequenced_assembly/printed_energy_processor');
 
   event.recipes.createSequencedAssembly(
     [
@@ -44,6 +44,6 @@ ServerEvents.recipes(event => {
   )
   .transitionalItem('kubejs:incomplete_energy_processor')
   .loops(1)
-  .id('kubejs:appflux/create/sequenced_assembly/energy_processor');
+  .id('appflux:create/sequenced_assembly/energy_processor');
 
 })
