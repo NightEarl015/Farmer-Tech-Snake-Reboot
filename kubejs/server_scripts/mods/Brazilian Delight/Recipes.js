@@ -20,12 +20,12 @@ ServerEvents.recipes(event => {
     [
       'braziliandelight:salt_bucket'
     ],
-  ).id('kubejs:braziliandelight/crafting_shapeless/salt_bucket_uncraft')
+  ).id('braziliandelight:crafting_shapeless/salt_bucket_uncraft')
 
   // Salt Bucket Blasting
-  event.blasting('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/blasting/salt_bucket_blasting')
-  event.smelting('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/smelting/salt_bucket_smelting')
-  event.smoking('kubejs:sea_salt_water_bucket', 'braziliandelight:salt_bucket').id('kubejs:braziliandelight/smoking/salt_bucket_smoking')
+  event.blasting('braziliandelight:salt_bucket', 'kubejs:sea_salt_water_bucket').id('braziliandelight:blasting/salt_bucket_blasting')
+  event.smelting('braziliandelight:salt_bucket', 'kubejs:sea_salt_water_bucket').id('braziliandelight:smelting/salt_bucket_smelting')
+  event.smoking('braziliandelight:salt_bucket', 'kubejs:sea_salt_water_bucket').id('braziliandelight:smoking/salt_bucket_smoking')
 
   // Coffee Beans 
   event.shapeless('createcafe:coffee_beans',
@@ -44,19 +44,19 @@ ServerEvents.recipes(event => {
     {
       B: 'createcafe:coffee_beans',
     }
-  ).id('kubejs:braziliandelight/coffee_beans_bag')
+  ).id('braziliandelight:coffee_beans_bag')
 
 // Coffee beans bag uncraft
   event.shapeless('9x createcafe:coffee_beans',
   [
     'braziliandelight:coffee_beans_bag'
   ],
-  ).id('kubejs:braziliandelight/coffee_beans_bag_uncraft')
+  ).id('braziliandelight:coffee_beans_bag_uncraft')
 
 
   // Corn Cooking
-  event.blasting('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('kubejs:braziliandelight/blasting/cooked_corn_blasting')
-  event.smelting('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('kubejs:braziliandelight/smelting/cooked_corn_smelting')
-  event.smoking('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('kubejs:braziliandelight/smoking/cooked_corn_smoking')
-  event.campfireCooking('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('kubejs:braziliandelight/smoking/cooked_corn_campfire_smoking')
+  event.blasting('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('braziliandelight:blasting/cooked_corn_blasting')
+  event.smelting('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('braziliandelight:smelting/cooked_corn_smelting')
+  event.smoking('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('braziliandelight:smoking/cooked_corn_smoking')
+  event.campfireCooking('culturaldelights:corn_cob', 'braziliandelight:cooked_corn').id('braziliandelight:smoking/cooked_corn_campfire_smoking')
 })

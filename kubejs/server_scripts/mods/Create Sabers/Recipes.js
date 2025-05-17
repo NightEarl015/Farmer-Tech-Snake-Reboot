@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
       B: block,
     }).id(`create_sabers:${saber.split(":")[1]}`)
   }
-  create_saber_maker('create_compressed:brass_sheet_block', 'create_sabers:brass_saber_black', 'quark:black_corundum_cluster')
+  create_saber_maker('create_compressed:brass_sheet_block', 'create_sabers:brass_saber_galaxy', 'quark:black_corundum_cluster')
   create_saber_maker('create_compressed:brass_sheet_block', 'create_sabers:brass_saber_blue', 'quark:blue_corundum_cluster')
   create_saber_maker('create_compressed:brass_sheet_block', 'create_sabers:brass_saber_lime', 'quark:lime_corundum_cluster')
   create_saber_maker('create_compressed:brass_sheet_block', 'create_sabers:brass_saber_yellow', 'quark:yellow_corundum_cluster')

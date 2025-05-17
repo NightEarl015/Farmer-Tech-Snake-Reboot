@@ -30,9 +30,6 @@ StartupEvents.registry("item", event=>{
   .displayName('Farmer & Tech Snake: Reboot')
   .maxStackSize(1)
 
-  event.create('incomplete_uncoded_precision_mechanism')
-  .displayName('Incomplete Uncoded Precision Mechanism')
-
   event.create('incomplete_printed_energy_processor')
   .displayName('Incomplete Printed Energy Circuit')
   event.create('incomplete_energy_processor')
