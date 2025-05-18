@@ -3,5 +3,5 @@
 
 ServerEvents.recipes(event => {
   // Removed recipes
-  event.remove({mod: "botanypotstiers"})
+  event.remove({mod: "alexis_64_coins"})
 })

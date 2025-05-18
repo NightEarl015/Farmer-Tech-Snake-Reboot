@@ -2,8 +2,19 @@
 // Modified by NightEarl015
 
 ServerEvents.recipes(event => {
-    // Removed recipes
-    event.remove({id: 'pneumaticcaraft:amadron/emerald_to_oil'})
-    event.remove({id: 'pneumaticcaraft:amadron/oil_to_emerald'})
-    // Rewrited recipes
+  // Removed recipes
+  event.remove({output: 'pneumaticcraft:plastic'})  
+  
+  // Rewrited recipes
+  event.replaceInput(
+    {mod: 'pneumaticcraft'}, 
+    'pneumaticcraft:plastic',            
+    'industrialforegoing:plastic'
+  )
+
+  event.replaceOutput(
+    {mod: 'pneumaticcraft'}, 
+    'pneumaticcraft:plastic',            
+    'industrialforegoing:plastic'
+  )
 })
