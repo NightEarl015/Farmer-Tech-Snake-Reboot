@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iron_furnaces"
+	group: "0140A44826A97669"
+	icon: {
+		Count: 1
+		id: "ironfurnaces:million_furnace"
+		tag: {
+			display: {
+				Name: "{\"extra\":[{\"color\":\"aqua\",\"text\":\"R\"},{\"color\":\"light_purple\",\"text\":\"a\"},{\"color\":\"green\",\"text\":\"i\"},{\"color\":\"yellow\",\"text\":\"n\"},{\"color\":\"yellow\",\"text\":\"b\"},{\"color\":\"aqua\",\"text\":\"o\"},{\"color\":\"blue\",\"text\":\"w\"},{\"color\":\"blue\",\"text\":\" \"},{\"color\":\"yellow\",\"text\":\"F\"},{\"color\":\"red\",\"text\":\"u\"},{\"color\":\"green\",\"text\":\"r\"},{\"color\":\"green\",\"text\":\"n\"},{\"color\":\"blue\",\"text\":\"a\"},{\"color\":\"red\",\"text\":\"c\"},{\"color\":\"red\",\"text\":\"e\"}],\"text\":\"\"}"
+			}
+		}
+	}
+	id: "465C551F7CC8BC62"
+	order_index: 12
+	quest_links: [ ]
+	quests: [ ]
+	title: "Iron Furnaces"
+}

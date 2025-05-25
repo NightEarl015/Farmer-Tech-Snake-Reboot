@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "modular_routers"
+	group: "0140A44826A97669"
+	icon: "modularrouters:modular_router"
+	id: "204CBB782D189FAB"
+	order_index: 17
+	quest_links: [ ]
+	quests: [ ]
+	title: "Modular Routers"
+}

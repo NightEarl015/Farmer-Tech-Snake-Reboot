@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "rftools"
+	group: "0140A44826A97669"
+	icon: "rftoolsstorage:modular_storage"
+	id: "226AD8A1FEEEBBFE"
+	order_index: 20
+	quest_links: [ ]
+	quests: [ ]
+	title: "RFtools"
+}

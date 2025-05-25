@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "integrated_dynamics"
+	group: "0140A44826A97669"
+	icon: "integrateddynamics:variable"
+	id: "57070054F7126D37"
+	order_index: 14
+	quest_links: [ ]
+	quests: [ ]
+	title: "Integrated Dynamics"
+}

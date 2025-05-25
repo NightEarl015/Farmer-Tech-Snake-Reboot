@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lightmans_currency"
+	group: "0140A44826A97669"
+	icon: "lightmanscurrency:atm"
+	id: "53838147D81CC6D3"
+	order_index: 16
+	quest_links: [ ]
+	quests: [ ]
+	title: "Lightman's Currency"
+}

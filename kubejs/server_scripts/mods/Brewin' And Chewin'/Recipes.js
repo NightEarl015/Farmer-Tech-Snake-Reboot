@@ -31,7 +31,7 @@ ServerEvents.recipes(event => {
       count: 1000,
       fluid: "brewinandchewin:mead"
     },
-  }).id('kubejs:brewinandchewin/fermenting/mead_from_honey')
+  }).id('brewinandchewin:fermenting/mead_from_honey')
   event.custom({
     type: "brewinandchewin:fermenting",
     basefluid: {
@@ -57,5 +57,5 @@ ServerEvents.recipes(event => {
     item: "brewinandchewin:pickled_pickles"
   },
   temperature: 2
-  }).id('kubejs:brewinandchewin/fermenting/pickled_pickles')
+  }).id('brewinandchewin:fermenting/pickled_pickles')
 })

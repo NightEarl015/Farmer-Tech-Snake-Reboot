@@ -32,7 +32,7 @@ ServerEvents.recipes(event => {
     [
       'braziliandelight:coffee_berries'
     ],
-  ).id('kubejs:braziliandelight/coffee_seeds')
+  ).id('braziliandelight:coffee_seeds')
 
   // Coffee beans bag
   event.shaped('braziliandelight:coffee_beans_bag',

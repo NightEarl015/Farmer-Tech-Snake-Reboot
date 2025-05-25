@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "iron_jetpacks"
+	group: "0140A44826A97669"
+	icon: "ironjetpacks:strap"
+	id: "395BD95E38BC5F08"
+	order_index: 11
+	quest_links: [ ]
+	quests: [ ]
+	title: "Iron Jetpacks"
+}

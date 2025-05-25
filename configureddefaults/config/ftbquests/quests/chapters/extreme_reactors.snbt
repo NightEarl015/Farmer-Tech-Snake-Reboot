@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "extreme_reactors"
+	group: "0140A44826A97669"
+	icon: "bigreactors:reinforced_reactorchargingportfe"
+	id: "587BC9627F201F9E"
+	order_index: 6
+	quest_links: [ ]
+	quests: [ ]
+	title: "Extreme Reactors"
+}

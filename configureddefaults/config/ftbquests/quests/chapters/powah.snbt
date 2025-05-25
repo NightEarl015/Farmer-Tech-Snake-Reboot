@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "powah"
+	group: "0140A44826A97669"
+	icon: "powah:player_aerial_pearl"
+	id: "659DBAB9FDE14AF7"
+	order_index: 19
+	quest_links: [ ]
+	quests: [ ]
+	title: "Powah!"
+}

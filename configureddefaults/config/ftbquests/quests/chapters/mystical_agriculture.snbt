@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "mystical_agriculture"
+	group: "31B95E8BCA4835CF"
+	icon: "mysticalagriculture:master_infusion_crystal"
+	id: "5202C35295006586"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Mystical Agriculture"
+}

@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ad_astra"
+	group: "45A3D756D6826169"
+	icon: {
+		Count: 1
+		id: "ad_astra:tier_4_rocket"
+		tag: { }
+	}
+	id: "63715C2CCF1B2586"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Ad Astra!"
+}

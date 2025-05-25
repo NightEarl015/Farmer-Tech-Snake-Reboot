@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
   )
   .transitionalItem('kubejs:incomplete_printed_quantum_processor')
   .loops(1)
-  .id('kubejs:advanced_ae/create/sequenced_assembly/printed_quantum_processor');
+  .id('advanced_ae:create/sequenced_assembly/printed_quantum_processor');
 
   event.recipes.createSequencedAssembly(
     [
@@ -29,6 +29,6 @@ ServerEvents.recipes(event => {
   )
   .transitionalItem('kubejs:incomplete_quantum_processor')
   .loops(1)
-  .id('kubejs:advanced_ae/create/sequenced_assembly/quantum_processor');
+  .id('advanced_ae:create/sequenced_assembly/quantum_processor');
 
 })

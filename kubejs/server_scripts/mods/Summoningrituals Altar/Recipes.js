@@ -15,5 +15,5 @@ ServerEvents.recipes(event => {
         H: "minecraft:wither_skeleton_skull",
         W: "#minecraft:logs"
     }
-    ).id('kubejs:summoningritualsaltar/crafting/altar')
+    ).id('summoningritualsaltar:crafting/altar')
 })

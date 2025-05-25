@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tips"
+	group: ""
+	icon: "minecraft:paper"
+	id: "226A2ED3A02F3612"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "Tips"
+}

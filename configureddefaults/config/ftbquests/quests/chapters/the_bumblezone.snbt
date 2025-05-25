@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_bumblezone"
+	group: "45A3D756D6826169"
+	icon: {
+		Count: 1
+		id: "the_bumblezone:stingless_bee_helmet_1"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "4CC7BBECE78A20E0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "The Bumblezone"
+}

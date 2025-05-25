@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
         output: { item: 'farmersdelight:straw'}
       }
     ]
-  }).id('kubejs:tmted/crusher/wheat_flour')
+  }).id('tmted:crusher/wheat_flour')
 
   event.custom({
     type: 'immersiveengineering:crusher',
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         output:{item: 'farmersdelight:straw', count: 4}
       }
     ]
-    }).id('kubejs:tmted/crusher/wheat_flour_from_bale')
+    }).id('tmted:crusher/wheat_flour_from_bale')
 
 
   event.replaceInput(

@@ -26,6 +26,9 @@ StartupEvents.registry("item", event=>{
   .maxStackSize(64)
   .tag('fts:small_wood_gear')
 
+  event.create('mixed_ore_1')
+  .displayName('Mixed Ore #1')
+
   event.create('modpack_icon')
   .displayName('Farmer & Tech Snake: Reboot')
   .maxStackSize(1)

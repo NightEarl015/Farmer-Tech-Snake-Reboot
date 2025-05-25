@@ -1,3 +1,10 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "0140A44826A97669", title: "Technology" }
+		{ id: "31B95E8BCA4835CF", title: "Agriculture" }
+		{ id: "45A3D756D6826169", title: "Adventure" }
+		{ id: "569CF780BC794C81", title: "Magic" }
+		{ id: "60403ECF976486F6", title: "Misc" }
+		{ id: "355FC4D2AE7A2E06", title: "Challenge" }
+	]
 }

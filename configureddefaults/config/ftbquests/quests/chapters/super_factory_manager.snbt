@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "super_factory_manager"
+	group: "0140A44826A97669"
+	icon: "sfm:manager"
+	id: "308D9C096A1BCE15"
+	order_index: 21
+	quest_links: [ ]
+	quests: [ ]
+	title: "Super Factory Manager"
+}
