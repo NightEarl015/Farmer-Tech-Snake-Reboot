@@ -16,19 +16,19 @@ ServerEvents.recipes(event => {
         type: 'mekanism:gas_conversion',
         input: { ingredient: {item: 'kubejs:industrial_salt'}},
         output:{ amount: 2, gas: 'mekanism:hydrogen_chloride'}
-    }).id('kubejs:mekanism/gas_conversion/salt_to_hydrogen_chloride')
+    }).id('mekanism:gas_conversion/salt_to_hydrogen_chloride')
 
     event.custom({
         type: 'mekanism:oxidizing',
         input: { ingredient: {item: 'kubejs:industrial_salt'}},
         output:{ amount: 15, gas: 'mekanism:brine'}
-    }).id('kubejs:mekanism/oxidizing/brine')
+    }).id('mekanism:oxidizing/brine')
 
     event.custom({
         type: 'mekanism:crystallizing',
         chemicalType: 'gas',
         input: { amount: 15, gas: 'mekanism:brine'},
         output:{ item: 'kubejs:industrial_salt'}
-    }).id('kubejs:mekanism/crystallizing/industrial_salt')
+    }).id('mekanism:crystallizing/industrial_salt')
 
 })
