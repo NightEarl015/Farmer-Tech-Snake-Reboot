@@ -17,11 +17,11 @@ ServerEvents.recipes(event => {
   //Water Mix-Hydrodistillation
   event.recipes.create.mixing([Fluid.of('mekanism:oxygen', 5), Fluid.of('mekanism:hydrogen', 10)], [Fluid.of('minecraft:water', 30), 'minecraft:coal', 'createbb:copper_zinc_catalyst']).heated().id('createbb:water_mix_hydrodistillation') 
 
-  /*
-  //Copper Zinc Catalyst(WIP)
+  
+  // Copper Zinc Catalyst(WIP)
   event.recipes.enderio.alloy_smelting(
-      Item.of("createbb:copper_zinc_catalyst"),
-      Ingredient.of("minecraft:carrot", "2x #forge:dusts/copper", "2x #forge:dusts/zinc")
-  );
-  */
+    Item.of("createbb:copper_zinc_catalyst"),
+    [Item.of("minecraft:copper_ingot"), Ingredient.of("alltheores:zinc_ingot")],
+    2800,
+  ).id('createbb:phase2/copper_zinc_catalyst')
 })

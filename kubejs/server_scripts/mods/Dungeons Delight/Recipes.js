@@ -2,5 +2,5 @@
 // Modified by NightEarl015
 
 ServerEvents.recipes(event => {
-  event.recipes.create.crushing('10x dungeonsdelight:stained_scrap', [Item.of('enderio:broken_spawner').ignoreNBT()]).id('dungeonsdelight:stained_scrap')
+  event.recipes.create.crushing('10x dungeonsdelight:stained_scrap', 'enderio:broken_spawner').id('dungeonsdelight:stained_scrap')
 })
