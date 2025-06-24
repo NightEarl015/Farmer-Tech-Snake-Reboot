@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     'braziliandelight:corn',            
     'culturaldelights:corn_cob'
   )
-'braziliandelight:coffee_beans_bag'
+
   // Salt Bucket Uncraft
   event.shapeless('salt:salt',
     [
